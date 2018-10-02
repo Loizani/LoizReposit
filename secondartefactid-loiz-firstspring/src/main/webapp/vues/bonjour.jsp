@@ -7,7 +7,7 @@
         
     </head> 
     <body>
-        <table border = 1 >
+        <table border = 1 bgcolor="#ABCDEF">
         <tr><td>sans controleur juste message : </td><td><p><spring:message code="libelle.bonjour"/></p></td></tr>
         <tr><td>avec controleur et message : </td><td><p><spring:message code="libelle.bonjour.lemonde" arguments="${personne}"/></p></tr>
         </table>
