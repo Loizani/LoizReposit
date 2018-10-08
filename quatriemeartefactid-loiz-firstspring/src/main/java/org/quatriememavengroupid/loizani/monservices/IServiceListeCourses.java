@@ -1,4 +1,4 @@
-package org.quatriememavengroupid.loizani.services;
+package org.quatriememavengroupid.loizani.monservices;
 
 import java.util.List;
 

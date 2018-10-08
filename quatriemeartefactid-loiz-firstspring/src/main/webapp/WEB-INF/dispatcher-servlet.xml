@@ -16,7 +16,7 @@
         <property name="defaultEncoding" value="ISO-8859-1" />
     </bean>
     
-        <context:component-scan base-package="org.quatriememavengroupid.loizani.controller" />
+    <context:component-scan base-package="org.quatriememavengroupid.loizani" />
 
     <bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -27,10 +27,10 @@
             <value>.jsp</value>
         </property>
     </bean>
-    
-    <tx:annotation-driven transaction-manager="transactionManager" />
+    <mvc:annotation-driven />
+   <tx:annotation-driven transaction-manager="transactionManager" />
     <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
-        <property name="jndiName" value="java:comp/env/jdbc/dsMonApplicationTest" />
+        <property name="jndiName" value="java:comp/env/jdbc/dsMonApplication" />
     </bean>
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
@@ -40,5 +40,12 @@
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
+    <bean id="Course"  class="org.quatriememavengroupid.loizani.bean.Course"></bean>    
+<!--     <bean id="IListeCoursesDAO" class="org.quatriememavengroupid.loizani.dao.IListeCoursesDAO"></bean>    
+    <bean id="ListeCoursesDAO" class="org.quatriememavengroupid.loizani.dao.ListeCoursesDAO"></bean>
+    <bean id="AfficherListeCoursesController" class="org.quatriememavengroupid.loizani.controller.AfficherListeCoursesController"></bean>
+   -->  
+    
+    
     
 </beans>
