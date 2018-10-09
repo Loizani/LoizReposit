@@ -18,9 +18,7 @@
     </bean>
     <mvc:annotation-driven />
     <context:annotation-config />
-    <context:component-scan base-package="org.troisiememavengroupid.loizani.controller" />   
-    
-<!--                              <bean class="org.troisiememavengroupid.loizani.controller.bonjourspringparam" /> -->
+    <context:component-scan base-package="org.troisiememavengroupid.loizani" />   
                              
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
