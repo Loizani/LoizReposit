@@ -34,4 +34,11 @@ public class ServiceListeCourses implements IServiceListeCourses {
 
         dao.supprimerCourse(lCourse);
     }
+    
+    @Transactional
+    public void modifierCourses(final List<Course> pListeCourses) {
+        for (final Course lCourse : pListeCourses) {
+            dao.modifierCourse(lCourse);
+        }
+    }
 }

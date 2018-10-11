@@ -12,5 +12,6 @@
 <p><a href="http://localhost:8080/modification-firstspring/afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
 <p><a href="http://localhost:8080/modification-firstspring/afficherCreationListeCourses" >Tester AJOUT données sql persistente Hibernate</a></p>
 <p><a href="http://localhost:8080/modification-firstspring/afficherSuppressionListeCourses" >Tester SUPPRESSION données sql persistente Hibernate</a></p>
+<p><a href="http://localhost:8080/modification-firstspring/afficherModificationListeCourses" >Tester Modification données sql persistente Hibernate</a></p>
 </body>
 </html>
