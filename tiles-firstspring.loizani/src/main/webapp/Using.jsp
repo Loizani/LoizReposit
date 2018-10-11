@@ -13,5 +13,6 @@
 <p><a href="http://localhost:8080/tiles-firstspring/afficherCreationListeCourses" >Tester AJOUT données sql persistente Hibernate</a></p>
 <p><a href="http://localhost:8080/tiles-firstspring/afficherSuppressionListeCourses" >Tester SUPPRESSION données sql persistente Hibernate</a></p>
 <p><a href="http://localhost:8080/tiles-firstspring/afficherModificationListeCourses" >Tester Modification données sql persistente Hibernate</a></p>
+<p><a href="http://localhost:8080/tiles-firstspring/afficherListeCourses" >Afficher page tiles</a></p>
 </body>
 </html>

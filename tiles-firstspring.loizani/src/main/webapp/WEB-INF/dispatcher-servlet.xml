@@ -18,8 +18,21 @@
     
     <context:component-scan base-package="org.mavengroupid.loizani" />
 
-    <bean
-        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <bean   
+        class="org.springframework.web.servlet.view.UrlBasedViewResolver">  
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />  
+    </bean>
+    
+    <bean id="tilesConfigurer"  
+        class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">  
+        <property name="definitions">  
+            <list>  
+                <value>/WEB-INF/tiles.xml</value>  
+            </list>  
+        </property>  
+    </bean>
+
+    <bean  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
             <value>/vues/</value>
         </property>
@@ -40,12 +53,6 @@
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
-    <bean id="Course"  class="org.mavengroupid.loizani.bean.Course"></bean>    
-<!--     <bean id="IListeCoursesDAO" class="org.mavengroupid.loizani.dao.IListeCoursesDAO"></bean>    
-    <bean id="ListeCoursesDAO" class="org.mavengroupid.loizani.dao.ListeCoursesDAO"></bean>
-    <bean id="AfficherListeCoursesController" class="org.mavengroupid.loizani.controller.AfficherListeCoursesController"></bean>
-   -->  
-    
-    
+    <bean id="Course"  class="org.mavengroupid.loizani.bean.Course"></bean>        
     
 </beans>
