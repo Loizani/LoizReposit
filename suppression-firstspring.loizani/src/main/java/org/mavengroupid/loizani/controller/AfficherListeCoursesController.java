@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.mavengroupid.loizani.bean.Course;
-import org.mavengroupid.loizani.monservices.IServiceListeCourses;
+import org.mavengroupid.loizani.myservices.IServiceListeCourses;
 
 import java.util.List;
 

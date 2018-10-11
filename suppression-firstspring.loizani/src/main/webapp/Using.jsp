@@ -11,5 +11,6 @@
 <p><a href="http://localhost:8080/suppression-firstspring/bonjoururi/ttttt" >Tester @PathVariable</a></p>
 <p><a href="http://localhost:8080/suppression-firstspring/afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
 <p><a href="http://localhost:8080/suppression-firstspring/afficherCreationListeCourses" >Tester AJOUT données sql persistente Hibernate</a></p>
+<p><a href="http://localhost:8080/suppression-firstspring/afficherSuppressionListeCourses" >Tester SUPPRESSION données sql persistente Hibernate</a></p>
 </body>
 </html>

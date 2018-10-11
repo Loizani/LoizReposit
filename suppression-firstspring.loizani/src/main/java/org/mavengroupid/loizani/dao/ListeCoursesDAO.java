@@ -25,11 +25,16 @@ public class ListeCoursesDAO implements IListeCoursesDAO {
         final Root<Course> lRoot = lCriteriaQuery.from(Course.class);
         lCriteriaQuery.select(lRoot);
         final TypedQuery<Course> lTypedQuery = entityManager.createQuery(lCriteriaQuery);
-
         return lTypedQuery.getResultList();
     }
     
     public void creerCourse(final Course pCourse) {
         entityManager.persist(pCourse);
     }
+    
+    public void supprimerCourse(final Course pCourse) {
+        final Course lCourse = entityManager.getReference(Course.class, pCourse.getId());
+        entityManager.remove(lCourse);
+    }
+    
 }

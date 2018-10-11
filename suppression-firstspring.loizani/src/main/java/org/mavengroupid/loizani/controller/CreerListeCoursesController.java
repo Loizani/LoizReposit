@@ -1,7 +1,7 @@
 package org.mavengroupid.loizani.controller;
 
 import org.mavengroupid.loizani.bean.Course;
-import org.mavengroupid.loizani.monservices.IServiceListeCourses;
+import org.mavengroupid.loizani.myservices.IServiceListeCourses;
 
 import java.util.List;
 import javax.validation.Valid;
