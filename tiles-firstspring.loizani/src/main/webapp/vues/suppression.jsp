@@ -6,6 +6,9 @@
 
 <table border="1">
     <thead>
+    	<tr>
+			<th colspan="4" scope="col">SUPPRESSION COURSES AVEC TILES</th>
+		</tr>
         <tr>
             <th><spring:message code="colonne.identifiant"/></th>
             <th><spring:message code="colonne.libelle"/></th>

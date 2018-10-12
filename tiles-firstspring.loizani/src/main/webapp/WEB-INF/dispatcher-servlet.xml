@@ -15,14 +15,29 @@
         <property name="basename" value="classpath:messages" />
         <property name="defaultEncoding" value="ISO-8859-1" />
     </bean>
-    
     <context:component-scan base-package="org.mavengroupid.loizani" />
+    <mvc:annotation-driven />
+   <tx:annotation-driven transaction-manager="transactionManager" />
+    <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName" value="java:comp/env/jdbc/dsMonApplication" />
+    </bean>
+
+    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+    
+   
 
     <bean   
         class="org.springframework.web.servlet.view.UrlBasedViewResolver">  
         <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />  
     </bean>
-    
+    <bean id="Course"  class="org.mavengroupid.loizani.bean.Course"></bean> 
+      
     <bean id="tilesConfigurer"  
         class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">  
         <property name="definitions">  
@@ -40,19 +55,7 @@
             <value>.jsp</value>
         </property>
     </bean>
-    <mvc:annotation-driven />
-   <tx:annotation-driven transaction-manager="transactionManager" />
-    <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
-        <property name="jndiName" value="java:comp/env/jdbc/dsMonApplication" />
-    </bean>
 
-    <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
-        <property name="dataSource" ref="dataSource" />
-    </bean>
-
-    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
-        <property name="entityManagerFactory" ref="entityManagerFactory" />
-    </bean>
-    <bean id="Course"  class="org.mavengroupid.loizani.bean.Course"></bean>        
+         
     
 </beans>

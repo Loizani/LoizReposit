@@ -4,9 +4,10 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd"> 
        
 <tiles-definitions>
-    <definition name="listeCourses" template="/vues/page.jsp">
-        <put-attribute name="principal"  value="/vues/listeCourses.jsp" />
-    </definition>
+
+<definition name="listeCoursesTiles" template="/vues/page.jsp">
+        <put-attribute name="principal"  value="/vues/listeCoursesTiles.jsp" />
+ </definition>
 
     <definition name="creation" template="/vues/page.jsp">
         <put-attribute name="principal"  value="/vues/creation.jsp" />

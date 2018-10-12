@@ -8,6 +8,9 @@
 <form:form method="post" modelAttribute="modification" action="modifierModificationListeCourses">
     <table border="1">
         <thead>
+        		<tr>
+			<th colspan="3" scope="col">MODIFICATION COURSES AVEC TILES</th>
+		</tr>
             <tr>
                 <th><spring:message code="colonne.identifiant"/></th>
                 <th><spring:message code="colonne.libelle"/></th>

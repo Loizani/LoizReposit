@@ -9,10 +9,14 @@
 <body>
 <p><a href="http://localhost:8080/tiles-firstspring/" target="_NEW">Url racine</a></p>
 <p><a href="http://localhost:8080/tiles-firstspring/bonjoururi/ttttt" >Tester @PathVariable</a></p>
-<p><a href="http://localhost:8080/tiles-firstspring/afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
-<p><a href="http://localhost:8080/tiles-firstspring/afficherCreationListeCourses" >Tester AJOUT données sql persistente Hibernate</a></p>
-<p><a href="http://localhost:8080/tiles-firstspring/afficherSuppressionListeCourses" >Tester SUPPRESSION données sql persistente Hibernate</a></p>
-<p><a href="http://localhost:8080/tiles-firstspring/afficherModificationListeCourses" >Tester Modification données sql persistente Hibernate</a></p>
-<p><a href="http://localhost:8080/tiles-firstspring/afficherListeCourses" >Afficher page tiles</a></p>
+<p><H3><u>&#9658;UTILISATION DE TILES : </u></H3></p>
+<p><H5><u>SANS TILES : </u></H5></p>
+<p><a href="http://localhost:8080/tiles-firstspring/afficherListeCourses" >SANS TILES : LECTURE données </a></p>
+<br />
+<p><H5><u>AVEC TILES : </u></H5></p>
+<p><a href="http://localhost:8083/tiles-firstspring/afficherListeCoursesTiles" >Affichage TILES : LECTURE données sql persistente Hibernate</a></p>
+<p><a href="http://localhost:8083/tiles-firstspring/afficherCreationListeCourses" >Affichage TILES : AJOUT données sql persistente Hibernate</a></p>
+<p><a href="http://localhost:8083/tiles-firstspring/afficherSuppressionListeCourses" >Affichage TILES : SUPPRESSION données sql persistente Hibernate</a></p>
+<p><a href="http://localhost:8083/tiles-firstspring/afficherModificationListeCourses" >Affichage TILES : Modification données sql persistente Hibernate</a></p>
 </body>
 </html>

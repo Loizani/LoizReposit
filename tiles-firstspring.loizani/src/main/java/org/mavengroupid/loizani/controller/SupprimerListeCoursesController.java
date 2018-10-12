@@ -15,7 +15,12 @@ import org.mavengroupid.loizani.myservices.IServiceListeCourses;
 @Controller
 public class SupprimerListeCoursesController {
 
-    @Autowired
+    public SupprimerListeCoursesController() {
+    	System.out.println("classe SupprimerListeCoursesController > constructeur");
+		// TODO Auto-generated constructor stub
+	}
+
+	@Autowired
     private IServiceListeCourses service;
 
     @RequestMapping(value="/afficherSuppressionListeCourses", method = RequestMethod.GET)
@@ -27,8 +32,10 @@ public class SupprimerListeCoursesController {
 
     @RequestMapping(value="/supprimerSuppressionListeCourses", method = RequestMethod.GET)
     public String supprimer(@RequestParam(value="idCourse") final Integer pIdCourse, final ModelMap pModel) {
-
-        service.supprimerCourse(pIdCourse);;
+    	System.out.println("classe SupprimerListeCoursesController > supprimer > avant suppression entité");
+    	
+        service.supprimerCourse(pIdCourse);
+        System.out.println("classe SupprimerListeCoursesController > supprimer > après suppression entité");
         return afficher(pModel);
     }
 }
