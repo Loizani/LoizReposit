@@ -7,11 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p><a href="http://localhost:8080/modification-firstspring/" target="_NEW">Url racine</a></p>
-<p><a href="http://localhost:8080/modification-firstspring/bonjoururi/ttttt" >Tester @PathVariable</a></p>
-<p><a href="http://localhost:8080/modification-firstspring/afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
-<p><a href="http://localhost:8080/modification-firstspring/afficherCreationListeCourses" >Tester AJOUT données sql persistente Hibernate</a></p>
-<p><a href="http://localhost:8080/modification-firstspring/afficherSuppressionListeCourses" >Tester SUPPRESSION données sql persistente Hibernate</a></p>
-<p><a href="http://localhost:8080/modification-firstspring/afficherModificationListeCourses" >Tester Modification données sql persistente Hibernate</a></p>
+<p><a href="" target="_NEW">Url racine</a></p>
+<p><a href="bonjoururi/ttttt" >Tester @PathVariable</a></p>
+<p><a href="afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
+<p><a href="afficherCreationListeCourses" >Tester AJOUT données sql persistente Hibernate</a></p>
+<p><a href="afficherSuppressionListeCourses" >Tester SUPPRESSION données sql persistente Hibernate</a></p>
+<p><a href="afficherModificationListeCourses" >Tester Modification données sql persistente Hibernate</a></p>
 </body>
 </html>
