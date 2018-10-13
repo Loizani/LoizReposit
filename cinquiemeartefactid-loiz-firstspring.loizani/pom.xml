@@ -4,12 +4,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>cinquiemeartefactid-loiz-firstspring.loizani</groupId>
-	<artifactId>cinquiemeartefactid-loiz-firstspring</artifactId>
+	<groupId>creation-loiz-firstspring.loizani</groupId>
+	<artifactId>creation-loiz-firstspring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-	<name>cinquiemeartefactid-loiz-firstspring Maven Webapp</name>
+	<name>creation-loiz-firstspring Maven Webapp</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -75,7 +75,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>cinquiemeartefactid-loiz-firstspring</finalName>
+		<finalName>creation-loiz-firstspring</finalName>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
 			<plugins>

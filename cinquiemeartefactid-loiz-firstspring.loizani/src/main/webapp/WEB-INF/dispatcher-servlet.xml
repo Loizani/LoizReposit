@@ -16,7 +16,7 @@
         <property name="defaultEncoding" value="ISO-8859-1" />
     </bean>
     
-    <context:component-scan base-package="org.cinquiememavengroupid.loizani" />
+    <context:component-scan base-package="org.mavengroupid.loizani" />
 
     <bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -40,10 +40,10 @@
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
-    <bean id="Course"  class="org.cinquiememavengroupid.loizani.bean.Course"></bean>    
-<!--     <bean id="IListeCoursesDAO" class="org.cinquiememavengroupid.loizani.dao.IListeCoursesDAO"></bean>    
-    <bean id="ListeCoursesDAO" class="org.cinquiememavengroupid.loizani.dao.ListeCoursesDAO"></bean>
-    <bean id="AfficherListeCoursesController" class="org.cinquiememavengroupid.loizani.controller.AfficherListeCoursesController"></bean>
+    <bean id="Course"  class="org.mavengroupid.loizani.bean.Course"></bean>    
+<!--     <bean id="IListeCoursesDAO" class="org.mavengroupid.loizani.dao.IListeCoursesDAO"></bean>    
+    <bean id="ListeCoursesDAO" class="org.mavengroupid.loizani.dao.ListeCoursesDAO"></bean>
+    <bean id="AfficherListeCoursesController" class="org.mavengroupid.loizani.controller.AfficherListeCoursesController"></bean>
    -->  
     
     
