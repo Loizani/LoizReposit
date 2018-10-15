@@ -11,7 +11,5 @@
 <p><a href="bonjoururi/ttttt" >Tester @PathVariable</a></p>
 <p><a href="afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
 <p><a href="afficherCreationListeCourses" >Tester AJOUT données sql persistente Hibernate</a></p>
-<p><a href="afficherSuppressionListeCourses" >Tester SUPPRESSION données sql persistente Hibernate</a></p>
-<p><a href="afficherModificationListeCourses" >Tester Modification données sql persistente Hibernate</a></p>
 </body>
 </html>
