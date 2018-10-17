@@ -7,8 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<p><a href="/cinquiemeartefactid-loiz-firstspring/" target="_NEW">Url racine</a></p>
-<p><a href="/cinquiemeartefactid-loiz-firstspring/bonjoururi/ttttt" >Tester @PathVariable</a></p>
-<p><a href="/cinquiemeartefactid-loiz-firstspring/afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
+<p><a href="" target="_NEW">Url racine</a></p>
+<p><a href="bonjoururi/ttttt" >Tester @PathVariable</a></p>
+<p><a href="afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
 </body>
 </html>
