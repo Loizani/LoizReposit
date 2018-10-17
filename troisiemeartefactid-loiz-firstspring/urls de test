@@ -1,4 +1,4 @@
 
-http://localhost:8081/troisiemeartefactid-loiz-firstspring/bonjour
-http://localhost:8081/troisiemeartefactid-loiz-firstspring/bonjourparam?personne=salut
-http://localhost:8081/troisiemeartefactid-loiz-firstspring/bonjoururi/what
+http://localhost:8081/uri-loiz-firstspring/bonjour
+http://localhost:8081/uri-loiz-firstspring/bonjourparam?personne=salut
+http://localhost:8081/uri-loiz-firstspring/bonjoururi/what

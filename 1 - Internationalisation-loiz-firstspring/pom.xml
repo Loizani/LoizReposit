@@ -5,13 +5,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.secondmavengroupid.loizani</groupId>
-  <artifactId>secondartefactid-loiz-firstspring</artifactId>
+  <artifactId>internationalisation-loiz-firstspring</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>secondartefactid-loiz-firstspring Maven Webapp</name>
+  <name>internationalisation-loiz-firstspring Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://localhost:8080/secondartefactid-loiz-firstspring</url>
+  <url>http://localhost:8080/internationalisation-loiz-firstspring</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -48,7 +48,7 @@
   </dependencies>
 
   <build>
-    <finalName>secondartefactid-loiz-firstspring</finalName>
+    <finalName>internationalisation-loiz-firstspring</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
