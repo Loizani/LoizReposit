@@ -27,7 +27,7 @@ public class SupprimerListeCoursesController {
     public String afficher(final ModelMap pModel) {
         final List<Course> lListeCourses = service.rechercherCourses();
         pModel.addAttribute("listeCourses", lListeCourses);
-        return "suppression";
+        return "vues/suppression";
     }
 
     @RequestMapping(value="/supprimerSuppressionListeCourses", method = RequestMethod.GET)

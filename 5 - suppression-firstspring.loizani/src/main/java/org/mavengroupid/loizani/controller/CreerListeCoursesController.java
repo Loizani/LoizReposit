@@ -27,7 +27,7 @@ public class CreerListeCoursesController {
         if (pModel.get("creation") == null) {
             pModel.addAttribute("creation", new CreationForm());
         }
-        return "creation";
+        return "vues/creation";
     }
 
     @RequestMapping(value="/creerCreationListeCourses", method = RequestMethod.POST)

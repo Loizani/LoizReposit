@@ -30,14 +30,12 @@
         <property name="entityManagerFactory" ref="entityManagerFactory" />
     </bean>
     
-   
-
-    <bean   
+       <bean   
         class="org.springframework.web.servlet.view.UrlBasedViewResolver">  
         <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView" />  
     </bean>
-    <bean id="Course"  class="org.mavengroupid.loizani.bean.Course"></bean> 
-      
+    
+    <bean id="Course"  class="org.mavengroupid.loizani.bean.Course"></bean>       
     <bean id="tilesConfigurer"  
         class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">  
         <property name="definitions">  
@@ -49,13 +47,11 @@
 
     <bean  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
-            <value>/vues/</value>
+            <value>/</value>
         </property>
         <property name="suffix">
             <value>.jsp</value>
         </property>
-    </bean>
-
-         
+    </bean>         
     
 </beans>

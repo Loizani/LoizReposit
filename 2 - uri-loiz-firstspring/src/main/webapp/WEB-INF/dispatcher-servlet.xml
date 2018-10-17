@@ -18,13 +18,13 @@
     </bean>
     <mvc:annotation-driven />
     <context:annotation-config />
-    <context:component-scan base-package="org.secondmavengroupid.loizani.controller" />    
+    <context:component-scan base-package="org.mavengroupid.loizani.controller" />    
 
     
     <bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
-            <value>/vues/</value>
+            <value>/</value>
         </property>
         <property name="suffix">
             <value>.jsp</value>

@@ -19,9 +19,9 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	<!-- Declaration de l'utilisation de la ressource JDBC -->
-	<welcome-file-list>
+<!-- 	<welcome-file-list>
 		<welcome-file>Using.jsp</welcome-file>
-	</welcome-file-list>
+	</welcome-file-list> -->
 	<resource-ref>
 		<description>Ressource JDBC de l'application</description>
 		<res-ref-name>jdbc/dsMonApplication</res-ref-name>

@@ -38,7 +38,7 @@ public class ModifierListeCoursesController {
             lModificationForm.setListeCourses(lListe);
             pModel.addAttribute("modification", lModificationForm);
         }
-        return "modification";
+        return "vues/modification";
     }
 
     @RequestMapping(value="/modifierModificationListeCourses", method = RequestMethod.POST)

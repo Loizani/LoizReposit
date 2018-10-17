@@ -22,6 +22,6 @@ public class BonjourController {
     public String afficherBonjour(final ModelMap pModel, @PathVariable(value="personne") final String sURI) {
 		System.out.println("******* constructeur BonjourController - sURI = "  + sURI );	
         pModel.addAttribute("personne", sURI);
-        return "bonjoururi";
+        return "vues/bonjoururi";
     }
 }

@@ -5,19 +5,19 @@
        
 <tiles-definitions>
 
-<definition name="listeCoursesTiles" template="/vues/page.jsp">
+<definition name="vues/listeCoursesTiles" template="/vues/page.jsp">
         <put-attribute name="principal"  value="/vues/listeCoursesTiles.jsp" />
  </definition>
 
-    <definition name="creation" template="/vues/page.jsp">
+    <definition name="vues/creation" template="/vues/page.jsp">
         <put-attribute name="principal"  value="/vues/creation.jsp" />
     </definition>
 
-    <definition name="suppression" template="/vues/page.jsp">
+    <definition name="vues/suppression" template="/vues/page.jsp">
         <put-attribute name="principal"  value="/vues/suppression.jsp" />
     </definition>
 
-    <definition name="modification" template="/vues/page.jsp">
+    <definition name="vues/modification" template="/vues/page.jsp">
         <put-attribute name="principal"  value="/vues/modification.jsp" />
     </definition>
 </tiles-definitions>

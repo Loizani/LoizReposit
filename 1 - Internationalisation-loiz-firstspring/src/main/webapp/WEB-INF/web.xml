@@ -33,7 +33,7 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	<!-- Fin "Utilisation de controleur" -->
-	<welcome-file-list>
+<!-- 	<welcome-file-list>
 		<welcome-file>Using.jsp</welcome-file>
-	</welcome-file-list>
+	</welcome-file-list> -->
 </web-app>

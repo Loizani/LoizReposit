@@ -31,7 +31,7 @@ public class AfficherListeCoursesTilesController {
     public String afficher(ModelMap pModel) {
         final List<Course> lListeCourses = pAttService.rechercherCourses();
         pModel.addAttribute("listeCourses", lListeCourses);
-        return "listeCoursesTiles";
+        return "vues/listeCoursesTiles";
     }
 	
     public AfficherListeCoursesTilesController() {

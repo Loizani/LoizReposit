@@ -29,9 +29,9 @@
     <servlet-mapping>
         <servlet-name>servlet-dispatcher</servlet-name>
         <url-pattern>/</url-pattern>      
-    </servlet-mapping>
-    	<welcome-file-list>
+</servlet-mapping>
+<!--    	<welcome-file-list>
 		<welcome-file>Using.jsp</welcome-file>
-	</welcome-file-list>
+	</welcome-file-list> -->
     <!-- Fin "Utilisation de controleur" -->
 </web-app>

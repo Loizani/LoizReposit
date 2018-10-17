@@ -16,20 +16,33 @@
         <property name="basename" value="classpath:messages" />
         <property name="defaultEncoding" value="UTF-8" />
     </bean>
+    <mvc:view-controller path="/" view-name="using"/>
     <mvc:annotation-driven />
     <context:annotation-config />
-    <context:component-scan base-package="org.secondmavengroupid.loizani.controller" />    
+    <context:component-scan base-package="org.mavengroupid.loizani.controller" />    
 
     
-    <bean
-        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <bean  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix">
-            <value>/vues/</value>
+            <value>/</value>
         </property>
         <property name="suffix">
             <value>.jsp</value>
         </property>
+        <property name="order" value="1" />
     </bean>        
+    
+
+    <bean  class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix">
+            <value>/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+        <property name="order" value="2" />
+    </bean> 
+    
     
 
 </beans>
