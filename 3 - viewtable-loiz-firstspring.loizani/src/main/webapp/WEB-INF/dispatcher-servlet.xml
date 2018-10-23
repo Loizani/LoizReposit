@@ -1,5 +1,6 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
     xmlns:mvc="http://www.springframework.org/schema/mvc"
     xmlns:tx="http://www.springframework.org/schema/tx"
     xsi:schemaLocation="http://www.springframework.org/schema/beans 
@@ -27,7 +28,7 @@
             <value>.jsp</value>
         </property>
     </bean>
-    <mvc:annotation-driven />
+<!--     <mvc:annotation-driven /> -->
    <tx:annotation-driven transaction-manager="transactionManager" />
     <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName" value="java:comp/env/jdbc/dsMonApplication" />
@@ -39,7 +40,6 @@
 
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory" />
-    </bean>
-    <bean id="Course"  class="org.mavengroupid.loizani.bean.Course"></bean>          
+    </bean>       
     
 </beans>

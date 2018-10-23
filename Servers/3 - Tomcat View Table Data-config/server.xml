@@ -105,7 +105,7 @@
 				<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
 				
-			<Context docBase="3 - viewtable-loiz-firstspring" path="/viewtable-loiz-firstspring" reloadable="true" source="org.eclipse.jst.j2ee.server:3 - viewtable-loiz-firstspring"/></Host>
+			<Context docBase="3 - viewtable-loiz-firstspring" path="/viewtable-loiz-firstspring" reloadable="false" source="org.eclipse.jst.j2ee.server:3 - viewtable-loiz-firstspring"/></Host>
 		</Engine>
 	</Service>
 </Server>

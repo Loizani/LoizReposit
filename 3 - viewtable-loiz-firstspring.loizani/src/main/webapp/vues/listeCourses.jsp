@@ -11,6 +11,9 @@
 	<table border="1">
 		<thead>
 			<tr>
+				<th colspan=3>over titre</th>
+			</tr>
+			<tr>
 				<th><spring:message code="colonne.identifiant" /></th>
 				<th><spring:message code="colonne.libelle" /></th>
 				<th><spring:message code="colonne.quantite" /></th>

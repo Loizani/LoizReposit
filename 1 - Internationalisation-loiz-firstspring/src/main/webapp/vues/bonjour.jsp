@@ -5,11 +5,15 @@
 <html>
     <head>
         <title><spring:message code="titre.bonjour"/></title>
+
     </head> 
     <body>
         <table border = 1 bgcolor="#ABCDEF">
-        <tr><td>sans controleur juste message : </td><td><p><spring:message code="libelle.bonjour"/></p></td></tr>
+         <tr><td>sans controleur juste message : </td><td><p><spring:message code="seclibelle.bonjour"/></p></td></tr>
         <tr><td>avec controleur et message : </td><td><p><spring:message code="libelle.bonjour.lemonde" arguments="${personne}"/></p></tr>
-        </table>
+        
+
+
+</table>
     </body>
 </html>

@@ -6,6 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title><spring:message code="titre.bonjour"/></title>
+
 </head>
 <body>
 <p><a href="" target="_NEW">Url racine</a></p>

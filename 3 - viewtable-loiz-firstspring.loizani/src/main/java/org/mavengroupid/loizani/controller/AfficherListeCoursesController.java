@@ -7,30 +7,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.mavengroupid.loizani.bean.Course;
-import org.mavengroupid.loizani.myservices.IServiceListeCourses;
+//import org.springframework.context.annotation.ComponentScan;
+//import org.springframework.context.annotation.Configuration;
+import org.mavengroupid.loizani.bean.EntityCourse;
+import org.mavengroupid.loizani.myservices.InterfaceServiceListeCourses;
 
 import java.util.List;
 
 
 @Controller
 @RequestMapping(value="/afficherListeCourses")
-@Configuration
-@ComponentScan("org.mavengroupid.loizani")
+//@Configuration
+//@ComponentScan("org.mavengroupid.loizani")
 
 public class AfficherListeCoursesController {    
-
     
     @Autowired
-    private IServiceListeCourses pAttService;      
+    private InterfaceServiceListeCourses privIntService;      
 
 
 	@RequestMapping(method = RequestMethod.GET)
     public String afficher(ModelMap pModel) {
-        final List<Course> lListeCourses = pAttService.rechercherCourses();
-        pModel.addAttribute("listeCourses", lListeCourses);
+        final List<EntityCourse> ListeEntityCourses = privIntService.rechercherCourses();
+        pModel.addAttribute("listeCourses", ListeEntityCourses);
         return "vues/listeCourses";
     }
 	

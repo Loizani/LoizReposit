@@ -2,17 +2,18 @@ package org.mavengroupid.loizani.bean;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+//import javax.persistence.GeneratedValue;
+//import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+
 @Table(name="maBase.dbo.LISTECOURSES")
-public class Course {
+public class EntityCourse {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    //@GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="IDOBJET")
     private Integer id;
     private String libelle;

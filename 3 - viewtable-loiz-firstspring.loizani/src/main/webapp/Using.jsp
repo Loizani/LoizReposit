@@ -8,8 +8,6 @@
 <title><spring:message code="titre.bonjour"/></title>
 </head>
 <body>
-<p><a href="" target="_NEW">Url racine</a></p>
-<p><a href="bonjoururi/ttttt" >Tester @PathVariable</a></p>
 <p><a href="afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
 </body>
 </html>
