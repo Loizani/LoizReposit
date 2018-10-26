@@ -1,4 +1,4 @@
-package loiz.packagehibernate;
+package loiz.packagehibernate.main;
 
 import org.hibernate.Session;
 import org.hibernate.HibernateException;
@@ -8,10 +8,12 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+import loiz.packagehibernate.bean.EntityCourse;
+
 //import org.hibernate.service.ServiceRegistry ; 
 public class displayHibPersistence {
 
-	@SuppressWarnings("deprecation")
+	//@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 
 		EntityCourse objEntitCo = new EntityCourse();

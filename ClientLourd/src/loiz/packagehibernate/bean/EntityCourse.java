@@ -1,6 +1,6 @@
 
 
-package  loiz.packagehibernate;
+package  loiz.packagehibernate.bean;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,7 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 //import javax.persistence.Table;
 
-@Entity     
+@Entity(name="LISTECOURSESHIB")
 //@Table(name="maBase.dbo.SECLISTECOURSES")
 //@Table(name="SECLISTECOURSES")
 public class EntityCourse {
