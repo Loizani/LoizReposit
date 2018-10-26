@@ -8,11 +8,11 @@ import javax.persistence.GenerationType;
 //import javax.persistence.GeneratedValue;
 //import javax.persistence.GenerationType;
 import javax.persistence.Id;
-//import javax.persistence.Table;
+import javax.persistence.Table;
 
-@Entity(name="LISTECOURSESHIB")
-//@Table(name="maBase.dbo.SECLISTECOURSES")
-//@Table(name="SECLISTECOURSES")
+
+@Entity(name="ENTITECOURSE")
+@Table(name="LISTECOURSESHIBER")
 public class EntityCourse {
 
     @Id

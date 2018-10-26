@@ -20,7 +20,8 @@ public class displayHibPersistence {
 		objEntitCo.setId(0);
 		objEntitCo.setLibelle("Maticha");
 		objEntitCo.setQuantite(8);
-
+		
+		
 		Configuration hibConf = new Configuration().configure().addAnnotatedClass(EntityCourse.class);
 		ServiceRegistry objSerReg = new ServiceRegistryBuilder().applySettings(hibConf.getProperties()).buildServiceRegistry() ; 
 
