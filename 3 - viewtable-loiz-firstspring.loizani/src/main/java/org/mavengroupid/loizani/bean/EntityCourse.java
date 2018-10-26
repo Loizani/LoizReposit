@@ -35,7 +35,7 @@ public class EntityCourse {
         libelle = pLibelle;
     }
 
-    public Integer getQuantite() {
+   public Integer getQuantite() {
         return quantite;
     }
 
