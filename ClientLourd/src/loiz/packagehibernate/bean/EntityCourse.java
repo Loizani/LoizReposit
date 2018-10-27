@@ -13,14 +13,14 @@ import javax.persistence.Transient;
 
 
 @Entity(name="ENTITECOURSE")
-@Table(name="LISTECOURSESHIBERNA")
+@Table(name="LISTECOURSE")
 public class EntityCourse {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="IDOBJET")
     private Integer id;
-    @Column(name="LibAliment") //si la colonne n'existe pas elle est crée en fin de table
+    //@Column(name="LibAliment") //si la colonne n'existe pas elle est crée en fin de table
     private String libelle;
     @Transient
     private Integer quantite;
@@ -48,4 +48,11 @@ public class EntityCourse {
     public void setQuantite(final Integer pQuantite) {
         quantite = pQuantite;
     }
+
+	@Override
+	public String toString() {
+		return "EntityCourse [id=" + id + ", libelle=" + libelle + ", quantite=" + quantite + "]";
+	}
+    
+    
 }

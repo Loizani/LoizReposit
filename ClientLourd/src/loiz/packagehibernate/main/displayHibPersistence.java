@@ -15,10 +15,11 @@ public class displayHibPersistence {
 	public static void main(String[] args) {
 
 		EntityCourse objEntitCo = new EntityCourse();
-		objEntitCo.setId(0);
+	    objEntitCo.setId(0);
 		objEntitCo.setLibelle("Maticha");
 		objEntitCo.setQuantite(8);
 		
+		System.out.println("objEntitCo.toString() :  " + objEntitCo.toString());
 		
 		Configuration hibConf = new Configuration();		
 		hibConf = hibConf.configure().addAnnotatedClass(EntityCourse.class) ;
