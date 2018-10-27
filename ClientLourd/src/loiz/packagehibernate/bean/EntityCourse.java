@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 //import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 
 @Entity(name="ENTITECOURSE")
@@ -21,6 +22,7 @@ public class EntityCourse {
     private Integer id;
     @Column(name="LibAliment") //si la colonne n'existe pas elle est crée en fin de table
     private String libelle;
+    @Transient
     private Integer quantite;
 
     public Integer getId() {

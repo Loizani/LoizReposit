@@ -10,10 +10,8 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 import loiz.packagehibernate.bean.EntityCourse;
 
-//import org.hibernate.service.ServiceRegistry ; 
 public class displayHibPersistence {
 
-	//@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 
 		EntityCourse objEntitCo = new EntityCourse();
@@ -22,21 +20,22 @@ public class displayHibPersistence {
 		objEntitCo.setQuantite(8);
 		
 		
-		Configuration hibConf = new Configuration().configure().addAnnotatedClass(EntityCourse.class);
-		ServiceRegistry objSerReg = new ServiceRegistryBuilder().applySettings(hibConf.getProperties()).buildServiceRegistry() ; 
+		Configuration hibConf = new Configuration();		
+		hibConf = hibConf.configure().addAnnotatedClass(EntityCourse.class) ;
+		ServiceRegistryBuilder objSerRegBuild = new ServiceRegistryBuilder();
+		objSerRegBuild = objSerRegBuild.applySettings(hibConf.getProperties()) ;
+		ServiceRegistry objSerReg = objSerRegBuild.buildServiceRegistry() ; 
 
 		SessionFactory sessFac = hibConf.buildSessionFactory(objSerReg);
 
 		Session mySess = sessFac.openSession();
 		Transaction objTrans = mySess.beginTransaction();
 		try {
-
 			mySess.save(objEntitCo);
 		}
 
 		catch (HibernateException hibernateEx) {
-
-			System.err.printf("**************************** Save data problem : \n", hibernateEx);
+			System.err.printf("**************************** Save data problem - HibernateException : \n\n", hibernateEx);
 			hibernateEx.printStackTrace();
 		}
 
