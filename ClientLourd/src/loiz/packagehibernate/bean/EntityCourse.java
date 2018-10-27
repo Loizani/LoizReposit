@@ -12,13 +12,14 @@ import javax.persistence.Table;
 
 
 @Entity(name="ENTITECOURSE")
-@Table(name="LISTECOURSESHIBER")
+@Table(name="LISTECOURSESHIBERNA")
 public class EntityCourse {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="IDOBJET")
     private Integer id;
+    @Column(name="LibAliment") //si la colonne n'existe pas elle est crée en fin de table
     private String libelle;
     private Integer quantite;
 
