@@ -15,32 +15,35 @@ public class displayHibPersistence {
 	public static void main(String[] args) {
 
 		EntityCourse objEntitCo = new EntityCourse();
+		
+		System.out.println("objEntitCo avant initialisation : " + objEntitCo) ;
 	    objEntitCo.setId(0);
 		objEntitCo.setLibelle("Maticha");
-		objEntitCo.setQuantite(8);
-		
+		objEntitCo.setQuantite(8);		
+		System.out.println("objEntitCo après initialisation : " + objEntitCo) ;
 		System.out.println("objEntitCo.toString() :  " + objEntitCo.toString());
+
 		
-		Configuration hibConf = new Configuration();		
-		hibConf = hibConf.configure().addAnnotatedClass(EntityCourse.class) ;
-		ServiceRegistryBuilder objSerRegBuild = new ServiceRegistryBuilder();
-		objSerRegBuild = objSerRegBuild.applySettings(hibConf.getProperties()) ;
-		ServiceRegistry objSerReg = objSerRegBuild.buildServiceRegistry() ; 
+//		Configuration hibConf = new Configuration();		
+//		hibConf = hibConf.configure().addAnnotatedClass(EntityCourse.class) ;
+//		ServiceRegistryBuilder objSerRegBuild = new ServiceRegistryBuilder();
+//		objSerRegBuild = objSerRegBuild.applySettings(hibConf.getProperties()) ;
+//		ServiceRegistry objSerReg = objSerRegBuild.buildServiceRegistry() ; 
+//
+//		SessionFactory sessFac = hibConf.buildSessionFactory(objSerReg);
+//
+//		Session mySess = sessFac.openSession();
+//		Transaction objTrans = mySess.beginTransaction();
+//		try {
+//			mySess.save(objEntitCo);
+//		}
+//
+//		catch (HibernateException hibernateEx) {
+//			System.err.printf("**************************** Save data problem - HibernateException : \n\n", hibernateEx);
+//			hibernateEx.printStackTrace();
+//		}
 
-		SessionFactory sessFac = hibConf.buildSessionFactory(objSerReg);
-
-		Session mySess = sessFac.openSession();
-		Transaction objTrans = mySess.beginTransaction();
-		try {
-			mySess.save(objEntitCo);
-		}
-
-		catch (HibernateException hibernateEx) {
-			System.err.printf("**************************** Save data problem - HibernateException : \n\n", hibernateEx);
-			hibernateEx.printStackTrace();
-		}
-
-		objTrans.commit();
+//		objTrans.commit();
 	}
 
 }
