@@ -13,7 +13,7 @@ import javax.persistence.Transient;
 
 
 @Entity(name="ENTITECOURSE")
-@Table(name="LISTECOURSE")
+@Table(name="LISTECOURSES")
 public class EntityCourse {
 
     @Id
@@ -22,7 +22,7 @@ public class EntityCourse {
     private Integer id;
     //@Column(name="LibAliment") //si la colonne n'existe pas elle est crée en fin de table
     private String libelle;
-    @Transient
+    //@Transient
     private Integer quantite;
 
     public Integer getId() {
