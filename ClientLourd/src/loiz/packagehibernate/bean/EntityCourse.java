@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 //import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Transient;
+//import javax.persistence.Transient;
 
 
 @Entity(name="ENTITECOURSE")
@@ -31,13 +31,6 @@ public class EntityCourse {
 		super();
 	}
 
-	public EntityFullNomAliment getEntFuNa() {
-		return entFuNa;
-	}
-
-	public void setEntFuNa(EntityFullNomAliment entFuNa) {
-		this.entFuNa = entFuNa;
-	}
 
 	public Integer getId() {
         return id;
@@ -63,6 +56,15 @@ public class EntityCourse {
         quantite = pQuantite;
     }
 
+	public EntityFullNomAliment getEntFuNa() {
+		return entFuNa;
+	}
+
+	public void setEntFuNa(EntityFullNomAliment entFuNa) {
+		this.entFuNa = entFuNa;
+	}
+
+    
 	@Override
 	public String toString() {
 		return "EntityCourse [id=" + id + ", libelle=" + libelle + ", quantite=" + quantite + "]";

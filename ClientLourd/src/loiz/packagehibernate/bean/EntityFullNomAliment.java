@@ -1,12 +1,17 @@
 package loiz.packagehibernate.bean;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
+
 
 @Embeddable
 public class EntityFullNomAliment {
 	
-	private String sNomAliment ;   //nom usuel de l'aliment 
+	@Column(name="NomAliment")
+	private String sNomAliment ;   //nom usuel de l'aliment
+	@Column(name="TypeAliment")
 	private String sTypeAliment ;  //fruit, legume
+	@Column(name="TypeMatiere")
 	private String sTypeMatiere  ; //solide, liquide, poudre
 	
 	public EntityFullNomAliment() {
