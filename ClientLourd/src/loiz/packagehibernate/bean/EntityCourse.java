@@ -24,8 +24,22 @@ public class EntityCourse {
     private String libelle;
     //@Transient
     private Integer quantite;
+    
+    private EntityFullNomAliment entFuNa ;    
+    
+    public EntityCourse() {
+		super();
+	}
 
-    public Integer getId() {
+	public EntityFullNomAliment getEntFuNa() {
+		return entFuNa;
+	}
+
+	public void setEntFuNa(EntityFullNomAliment entFuNa) {
+		this.entFuNa = entFuNa;
+	}
+
+	public Integer getId() {
         return id;
     }
 
