@@ -1,0 +1,23 @@
+USE [maBase]
+GO
+
+CREATE TABLE [dbo].[DetailAliment](
+	[IDALIMENT] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	[NomAliment] [varchar](255)  NOT NULL UNIQUE,
+	[TypeAliment] [varchar](100) NOT NULL,
+	[TypeMatiere] [varchar](100) NOT NULL);
+GO
+
+
+
+USE [maBase]
+GO
+
+CREATE TABLE [dbo].[LISTECOURSES](
+	[IDOBJET] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	[LIBELLE] [varchar](100)   NOT NULL UNIQUE,
+	[QUANTITE] [int] NOT NULL);
+
+
+SELECT * FROM [DetailAliment]
+SELECT * FROM [LISTECOURSES]

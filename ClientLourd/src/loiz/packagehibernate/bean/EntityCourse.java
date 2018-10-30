@@ -8,6 +8,7 @@ import javax.persistence.GenerationType;
 //import javax.persistence.GeneratedValue;
 //import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 //import javax.persistence.Transient;
 
@@ -24,8 +25,8 @@ public class EntityCourse {
     private String libelle;
     //@Transient
     private Integer quantite;
-    
-    private EntityFullNomAliment entFuNa ;    
+    @OneToOne
+    private EntityDetailAliment entFuNa ;    
     
     public EntityCourse() {
 		super();
@@ -56,11 +57,11 @@ public class EntityCourse {
         quantite = pQuantite;
     }
 
-	public EntityFullNomAliment getEntFuNa() {
+	public EntityDetailAliment getEntFuNa() {
 		return entFuNa;
 	}
 
-	public void setEntFuNa(EntityFullNomAliment entFuNa) {
+	public void setEntFuNa(EntityDetailAliment entFuNa) {
 		this.entFuNa = entFuNa;
 	}
 

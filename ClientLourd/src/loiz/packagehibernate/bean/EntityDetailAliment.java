@@ -1,12 +1,20 @@
 package loiz.packagehibernate.bean;
 
 import javax.persistence.Column;
-import javax.persistence.Embeddable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 
-@Embeddable
-public class EntityFullNomAliment {
-	
+@Entity(name="EntityDetailAliment")
+@Table(name="DetailAliment")
+public class EntityDetailAliment {	
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name="IDALIMENT")
+    private Integer idAlim;
 	@Column(name="NomAliment")
 	private String sNomAliment ;   //nom usuel de l'aliment
 	@Column(name="TypeAliment")
@@ -14,7 +22,7 @@ public class EntityFullNomAliment {
 	@Column(name="TypeMatiere")
 	private String sTypeMatiere  ; //solide, liquide, poudre
 	
-	public EntityFullNomAliment() {
+	public EntityDetailAliment() {
 		super();	
 	}
 

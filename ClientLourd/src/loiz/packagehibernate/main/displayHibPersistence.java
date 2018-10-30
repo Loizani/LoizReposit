@@ -9,7 +9,7 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 import loiz.packagehibernate.bean.EntityCourse;
-import loiz.packagehibernate.bean.EntityFullNomAliment;
+import loiz.packagehibernate.bean.EntityDetailAliment;
    
 public class displayHibPersistence {
 
@@ -22,15 +22,16 @@ public class displayHibPersistence {
 		objEntitCo.setLibelle("Maticha");
 		objEntitCo.setQuantite(8);
 		
-		EntityFullNomAliment objEFN = new EntityFullNomAliment();
-		objEFN.setsNomAliment("Tomatem");
-		objEFN.setsTypeAliment("Khedra");
+		EntityDetailAliment objEFN = new EntityDetailAliment();
+		objEFN.setsNomAliment("Tomate");
+		objEFN.setsTypeAliment("Legume");
 		objEFN.setsTypeMatiere("solide");
 		
 		objEntitCo.setEntFuNa(objEFN);
 		
-		Configuration hibConf = new Configuration();		
+		Configuration hibConf = new Configuration();	
 		hibConf = hibConf.configure().addAnnotatedClass(EntityCourse.class) ;
+		hibConf = hibConf.configure().addAnnotatedClass(EntityDetailAliment.class) ;
 		ServiceRegistryBuilder objSerRegBuild = new ServiceRegistryBuilder();
 		objSerRegBuild = objSerRegBuild.applySettings(hibConf.getProperties()) ;
 		ServiceRegistry objSerReg = objSerRegBuild.buildServiceRegistry() ;  
@@ -41,6 +42,7 @@ public class displayHibPersistence {
 		try {
 
 			mySess.save(objEntitCo);
+			mySess.save(objEFN);
 			objTrans.commit();	
 		}
 
