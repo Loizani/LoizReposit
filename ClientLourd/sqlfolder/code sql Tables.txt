@@ -8,8 +8,6 @@ CREATE TABLE [dbo].[DetailAliment](
 	[TypeMatiere] [varchar](100) NOT NULL);
 GO
 
-
-
 USE [maBase]
 GO
 
@@ -18,6 +16,20 @@ CREATE TABLE [dbo].[LISTECOURSES](
 	[LIBELLE] [varchar](100)   NOT NULL UNIQUE,
 	[QUANTITE] [int] NOT NULL);
 
+USE [maBase]
+GO
+--**************** table cotation aliment pour lien @OneToMany
+CREATE TABLE [dbo].[TableCotationAliment](
+	[IDALIMENT] [int] PRIMARY KEY IDENTITY(1,1) NOT NULL,
+	[NomAliment] [varchar](100)   NOT NULL UNIQUE,
+	[UniteValeur] [varchar](100)   NOT NULL,
+	[ValeurCotation] [int] NOT NULL);
+	
+	
+	
+	
+	
 
 SELECT * FROM [DetailAliment]
 SELECT * FROM [LISTECOURSES]
+SELECT * FROM [TableCotationAliment]
