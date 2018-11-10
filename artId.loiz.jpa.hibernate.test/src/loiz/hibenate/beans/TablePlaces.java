@@ -14,7 +14,7 @@ import java.util.List;
 @Table(name="TablePlaces", 
 uniqueConstraints=@UniqueConstraint(columnNames={"NomPlace"}))
 //@NamedQuery(name="TablePlace.findAll", query="SELECT t FROM TablePlace t")
-public class TablePlace implements Serializable {
+public class TablePlaces implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -29,10 +29,15 @@ public class TablePlace implements Serializable {
 	private String paysPlace;
 
 	//bi-directional many-to-one association to TableAcquisition
-	@OneToMany(mappedBy="tablePlace")
+	@OneToMany(mappedBy="tablePlaces")
 	private List<TableAcquisition> tableAcquisitions;
 
-	public TablePlace() {
+	public TablePlaces() {
+	}
+	
+	public TablePlaces(String ArgnomPlace, String ArgpaysPlace) {
+		this.nomPlace = ArgnomPlace ;
+		this.paysPlace = ArgpaysPlace ;
 	}
 
 	public String getNomPlace() {
@@ -61,14 +66,14 @@ public class TablePlace implements Serializable {
 
 	public TableAcquisition addTableAcquisition(TableAcquisition tableAcquisition) {
 		getTableAcquisitions().add(tableAcquisition);
-		tableAcquisition.setTablePlace(this);
+		tableAcquisition.setTablePlaces(this);
 
 		return tableAcquisition;
 	}
 
 	public TableAcquisition removeTableAcquisition(TableAcquisition tableAcquisition) {
 		getTableAcquisitions().remove(tableAcquisition);
-		tableAcquisition.setTablePlace(null);
+		tableAcquisition.setTablePlaces(null);
 
 		return tableAcquisition;
 	}

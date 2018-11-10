@@ -1,6 +1,10 @@
 package loiz.hibenate.main;
 
 import org.hibernate.Session;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -10,12 +14,18 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 import loiz.hibenate.beans.*;
    
-public class CreerTables {
+public class AddDataPlace {
 
 	public static void main(String[] args) {		
 		
-		  
-		Configuration hibConf = new Configuration().configure("hibernateBaseAcquisitionHCreate.cfg.xml");        
+		
+		
+		List <TablePlaces> listPlaces = new ArrayList<TablePlaces>() ;
+		listPlaces.add(new TablePlaces("SIDNEY", "AUSTRALIA"));
+		listPlaces.add(new TablePlaces("PEKIN", "CHINA"));
+		listPlaces.add(new TablePlaces("TOKYO", "JAPAN"));
+		
+		Configuration hibConf = new Configuration().configure("hibernateBaseAcquisitionHUpdate.cfg.xml");        
 
 		hibConf = hibConf.addAnnotatedClass(TableAcquisition.class) ;
 		hibConf = hibConf.addAnnotatedClass(TableDenrees.class) ;
@@ -31,6 +41,9 @@ public class CreerTables {
 		Session mySess = sessFac.openSession();
 		Transaction objTrans = mySess.beginTransaction();					
 		try {
+			for(TablePlaces elePlace : listPlaces) {
+				mySess.save(elePlace);
+			}
 			objTrans.commit();	
 		}
 

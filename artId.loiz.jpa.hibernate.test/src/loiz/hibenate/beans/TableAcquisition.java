@@ -27,7 +27,7 @@ public class TableAcquisition implements Serializable {
 	//bi-directional many-to-one association to TableDenree
 	@ManyToOne
 	@JoinColumn(name="IdExtDenree")
-	private TableDenree tableDenree;
+	private TableDenrees tableDenree;
 
 	//bi-directional many-to-one association to TableOperation
 	@ManyToOne
@@ -37,11 +37,17 @@ public class TableAcquisition implements Serializable {
 	//bi-directional many-to-one association to TablePlace
 	@ManyToOne
 	@JoinColumn(name="IdExtPlace")
-	private TablePlace tablePlace;
+	private TablePlaces tablePlaces;
 
+	public TableAcquisition(TablePlaces ArgObjtablePlaces, TableOperation ArgObjtableOperation, TableDenrees ArgObjtableDenree, double ArgmontantAcquisition ) {
+		this.tablePlaces = ArgObjtablePlaces;
+		this.tableOperation = ArgObjtableOperation ;
+		this.tableDenree = ArgObjtableDenree ;
+		this.montantAcquisition = ArgmontantAcquisition ;
+	}
+	
 	public TableAcquisition() {
 	}
-
 
 	public double getMontantAcquisition() {
 		return this.montantAcquisition;
@@ -51,11 +57,11 @@ public class TableAcquisition implements Serializable {
 		this.montantAcquisition = montantAcquisition;
 	}
 
-	public TableDenree getTableDenree() {
+	public TableDenrees getTableDenree() {
 		return this.tableDenree;
 	}
 
-	public void setTableDenree(TableDenree tableDenree) {
+	public void setTableDenree(TableDenrees tableDenree) {
 		this.tableDenree = tableDenree;
 	}
 
@@ -67,12 +73,12 @@ public class TableAcquisition implements Serializable {
 		this.tableOperation = tableOperation;
 	}
 
-	public TablePlace getTablePlace() {
-		return this.tablePlace;
+	public TablePlaces getTablePlaces() {
+		return this.tablePlaces;
 	}
 
-	public void setTablePlace(TablePlace tablePlace) {
-		this.tablePlace = tablePlace;
+	public void setTablePlaces(TablePlaces tablePlaces) {
+		this.tablePlaces = tablePlaces;
 	}
 
 }

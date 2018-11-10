@@ -14,24 +14,24 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 import loiz.hibenate.beans.*;
    
-public class AddDateToTables {
+public class AddDataDenree {
 
 	public static void main(String[] args) {		
 		
 		
 		
-		List <TableDenree> listDenrees = new ArrayList<TableDenree>() ;
+		List <TableDenrees> listDenrees = new ArrayList<TableDenrees>() ;
 		//public TableDenree(String Arg_nomDenree, String Arg_typeDenree, String Arg_uniteDeVenteDenree, String Arg_valeurUniteDenree) {		
-		listDenrees.add(new TableDenree("Tomates", "Legume", "tonne", "100"));
-		listDenrees.add(new TableDenree("RIZ", "Feculent", "tonne", "50"));
-		listDenrees.add(new TableDenree("Farine", "Cereale", "tonne", "200"));
+		listDenrees.add(new TableDenrees("Tomates", "Legume", "tonne", "100"));
+		listDenrees.add(new TableDenrees("RIZ", "Feculent", "tonne", "50"));
+		listDenrees.add(new TableDenrees("Farine", "Cereale", "tonne", "200"));
 		
 		Configuration hibConf = new Configuration().configure("hibernateBaseAcquisitionHUpdate.cfg.xml");        
 
-		//hibConf = hibConf.addAnnotatedClass(TableAcquisition.class) ;
-		hibConf = hibConf.addAnnotatedClass(TableDenree.class) ;
-		//hibConf = hibConf.addAnnotatedClass(TableOperation.class) ;
-		//hibConf = hibConf.addAnnotatedClass(TablePlace.class) ;
+		hibConf = hibConf.addAnnotatedClass(TableAcquisition.class) ;
+		hibConf = hibConf.addAnnotatedClass(TableDenrees.class) ;
+		hibConf = hibConf.addAnnotatedClass(TableOperation.class) ;
+		hibConf = hibConf.addAnnotatedClass(TablePlaces.class) ;
 		
 		
 		ServiceRegistryBuilder objSerRegBuild = new ServiceRegistryBuilder();
@@ -42,7 +42,7 @@ public class AddDateToTables {
 		Session mySess = sessFac.openSession();
 		Transaction objTrans = mySess.beginTransaction();					
 		try {
-			for(TableDenree eleDentree : listDenrees) {
+			for(TableDenrees eleDentree : listDenrees) {
 				mySess.save(eleDentree);
 			}
 			objTrans.commit();	

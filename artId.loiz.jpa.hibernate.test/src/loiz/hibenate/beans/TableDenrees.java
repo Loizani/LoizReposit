@@ -15,7 +15,7 @@ import java.util.List;
 uniqueConstraints=@UniqueConstraint(columnNames={"NomDenree","TypeDenree"}))
 
 //@NamedQuery(name="TableDenree.findAll", query="SELECT t FROM TableDenree t")
-public class TableDenree implements Serializable {
+public class TableDenrees implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -39,9 +39,9 @@ public class TableDenree implements Serializable {
 	@OneToMany(mappedBy="tableDenree")
 	private List<TableAcquisition> tableAcquisitions;
 
-	public TableDenree() {
+	public TableDenrees() {
 	}
-	public TableDenree(String Arg_nomDenree, String Arg_typeDenree, String Arg_uniteDeVenteDenree, String Arg_valeurUniteDenree) {
+	public TableDenrees(String Arg_nomDenree, String Arg_typeDenree, String Arg_uniteDeVenteDenree, String Arg_valeurUniteDenree) {
 		this.setNomDenree(Arg_nomDenree);
 		this.setTypeDenree(Arg_typeDenree);
 		this.setUniteDeVenteDenree(Arg_uniteDeVenteDenree);

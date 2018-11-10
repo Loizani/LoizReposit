@@ -32,9 +32,13 @@ public class TableOperation implements Serializable {
 	@OneToMany(mappedBy="tableOperation")
 	private List<TableAcquisition> tableAcquisitions;
 
-	public TableOperation() {
+	public TableOperation(	String ArgdateOperation,String ArgsocieteOperation) {
+		this.dateOperation = ArgdateOperation ;
+		this.societeOperation = ArgsocieteOperation ;
 	}
 
+	public TableOperation() {
+	}
 
 
 	public String getDateOperation() {

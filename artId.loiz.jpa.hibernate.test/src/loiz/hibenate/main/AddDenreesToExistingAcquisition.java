@@ -1,6 +1,10 @@
 package loiz.hibenate.main;
 
 import org.hibernate.Session;
+
+/*import java.util.ArrayList;
+import java.util.List;*/
+
 import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -10,13 +14,13 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 import loiz.hibenate.beans.*;
    
-public class CreerTables {
-
+public class AddDenreesToExistingAcquisition {
+//@SuppressWarnings(value = { "unused" })
 	public static void main(String[] args) {		
 		
-		  
-		Configuration hibConf = new Configuration().configure("hibernateBaseAcquisitionHCreate.cfg.xml");        
-
+		
+		
+		Configuration hibConf = new Configuration().configure("hibernateBaseAcquisitionHUpdate.cfg.xml");       
 		hibConf = hibConf.addAnnotatedClass(TableAcquisition.class) ;
 		hibConf = hibConf.addAnnotatedClass(TableDenrees.class) ;
 		hibConf = hibConf.addAnnotatedClass(TableOperation.class) ;
@@ -29,14 +33,21 @@ public class CreerTables {
 		SessionFactory sessFac = hibConf.buildSessionFactory(objSerReg); 
 
 		Session mySess = sessFac.openSession();
-		Transaction objTrans = mySess.beginTransaction();					
+		Transaction objTrans = mySess.beginTransaction();
+		
+		TablePlaces objPlace = (TablePlaces)mySess.get(TablePlaces.class, 1) ;
+		TableOperation objOperation = (TableOperation)mySess.get(TableOperation.class, 1) ;		
+		TableDenrees objNewDenreeToAdd = (TableDenrees)mySess.get(TableDenrees.class, 2) ;		
+		TableAcquisition objAcquisition = new TableAcquisition(objPlace, objOperation, objNewDenreeToAdd, (double)30000 );		
+		
 		try {
-			objTrans.commit();	
+			mySess.save(objAcquisition);
+			objTrans.commit();			
 		}
 
 		catch (HibernateException hibernateEx) {
 
-			System.err.printf("**************************** Save data problem : \n", hibernateEx);
+			System.err.printf("**************************** Problème : \n", hibernateEx);
 			hibernateEx.printStackTrace();
 		}
 
