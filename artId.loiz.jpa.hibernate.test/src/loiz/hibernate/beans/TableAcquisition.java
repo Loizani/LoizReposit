@@ -1,18 +1,25 @@
-package loiz.hibenate.beans;
+package loiz.hibernate.beans;
 
 import java.io.Serializable;
-import javax.persistence.*;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 /**
  * The persistent class for the TableAcquisitions database table.
  * 
  */
-@Entity
-@Table(name="TableAcquisitions", 
-uniqueConstraints=@UniqueConstraint(columnNames={"IdExtDenree", "IdExtOperation", "IdExtPlace"}))
 
-//@NamedQuery(name="TableAcquisition.findAll", query="SELECT t FROM TableAcquisition t")
+@Entity
+@Table(name="TableAcquisitions",
+uniqueConstraints=@UniqueConstraint(columnNames={"IdExtDenree", "IdExtOperation", "IdExtPlace"}))
 public class TableAcquisition implements Serializable {
 	private static final long serialVersionUID = 1L;
 

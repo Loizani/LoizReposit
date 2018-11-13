@@ -1,4 +1,4 @@
-package loiz.hibenate.beans;
+package loiz.hibernate.beans;
 
 import java.io.Serializable;
 import javax.persistence.*;

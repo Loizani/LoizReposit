@@ -1,10 +1,10 @@
-package loiz.hibenate.beans;
+package loiz.hibernate.beans;
 
 import java.io.Serializable;
 import javax.persistence.*;
-
 import java.util.List;
-
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 /**
  * The persistent class for the TableOperations database table.
@@ -13,6 +13,9 @@ import java.util.List;
 @Entity
 @Table(name="TableOperations", 
 uniqueConstraints=@UniqueConstraint(columnNames={"DateOperation","SocieteOperation"}))
+
+@Cacheable
+@Cache(usage=CacheConcurrencyStrategy.READ_ONLY)
 //@NamedQuery(name="TableOperation.findAll", query="SELECT t FROM TableOperation t")
 public class TableOperation implements Serializable {
 	private static final long serialVersionUID = 1L;
