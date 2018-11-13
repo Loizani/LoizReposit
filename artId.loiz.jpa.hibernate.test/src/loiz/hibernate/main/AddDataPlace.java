@@ -1,4 +1,4 @@
-package loiz.hibenate.main;
+package loiz.hibernate.main;
 
 import org.hibernate.Session;
 
@@ -10,9 +10,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-import org.hibernate.service.ServiceRegistryBuilder;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-import loiz.hibenate.beans.*;
+import loiz.hibernate.beans.*;
    
 public class AddDataPlace {
 
@@ -33,9 +33,9 @@ public class AddDataPlace {
 		hibConf = hibConf.addAnnotatedClass(TablePlaces.class) ;
 		
 		
-		ServiceRegistryBuilder objSerRegBuild = new ServiceRegistryBuilder();
+		StandardServiceRegistryBuilder objSerRegBuild = new StandardServiceRegistryBuilder();
 		objSerRegBuild = objSerRegBuild.applySettings(hibConf.getProperties()) ;
-		ServiceRegistry objSerReg = objSerRegBuild.buildServiceRegistry() ;  
+		ServiceRegistry objSerReg = objSerRegBuild.build() ;  
 		SessionFactory sessFac = hibConf.buildSessionFactory(objSerReg); 
 
 		Session mySess = sessFac.openSession();

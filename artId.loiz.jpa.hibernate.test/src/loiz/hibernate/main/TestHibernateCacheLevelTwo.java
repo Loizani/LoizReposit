@@ -1,37 +1,35 @@
-package loiz.hibenate.main;
+package loiz.hibernate.main;
 
 import org.hibernate.Session;
-
-
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-import org.hibernate.service.ServiceRegistryBuilder;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import loiz.hibernate.beans.*;
 
-import loiz.hibenate.beans.*;
 
-
-public class TestHibernateCache {
+public class TestHibernateCacheLevelTwo {
 	// Cette bibliothèque fetch deux fois mais une seule reqête est exécutée :
 	public static void main(String[] args) {
 		
-		HibernateQuery objHibQuery = new HibernateQuery();
+		HibernateQueryleveltwo objHibQuery = new HibernateQueryleveltwo();
 		Configuration hibConf = new Configuration().configure("hibernateBaseAcquisitionHUpdate.cfg.xml");
 		hibConf = hibConf.addAnnotatedClass(TableAcquisition.class);
 		hibConf = hibConf.addAnnotatedClass(TableDenrees.class);
 		hibConf = hibConf.addAnnotatedClass(TableOperation.class);
 		hibConf = hibConf.addAnnotatedClass(TablePlaces.class);
 
-		ServiceRegistryBuilder objSerRegBuild = new ServiceRegistryBuilder();
+		StandardServiceRegistryBuilder objSerRegBuild = new StandardServiceRegistryBuilder();
 		objSerRegBuild = objSerRegBuild.applySettings(hibConf.getProperties());
-		ServiceRegistry objSerReg = objSerRegBuild.buildServiceRegistry();
-		SessionFactory sessFac = hibConf.buildSessionFactory(objSerReg);
-		Session mySess = sessFac.openSession();
+		ServiceRegistry objSerReg = objSerRegBuild.build();
+
+
 		try {			
-			objHibQuery.runFetchOperation(mySess);
-			objHibQuery.runFetchOperation(mySess);
-			objHibQuery.runFetchOperation(mySess);
+			objHibQuery.runFetchOperation(hibConf, objSerReg);
+			objHibQuery.runFetchOperation(hibConf, objSerReg);			
+			objHibQuery.runFetchOperation(hibConf, objSerReg);	
+			
 		}
 
 		catch (Exception Ex) {
@@ -43,17 +41,19 @@ public class TestHibernateCache {
 
 }
 
-class HibernateQuery {
+class HibernateQueryleveltwo {
 
-	public HibernateQuery() {
+	public HibernateQueryleveltwo() {
 		super();
 	}
 
-	public void runFetchOperation(Session ArgMySess ) {
-		System.out.println("*************************** DEBUT runFetchOperation() **************************************");		
-		Transaction objTrans = ArgMySess.beginTransaction();
+	public void runFetchOperation(Configuration ArghibConf, ServiceRegistry ArgobjSerReg ) {
+		System.out.println("*************************** DEBUT runFetchOperation() **************************************");
+		SessionFactory sessFac = ArghibConf.buildSessionFactory(ArgobjSerReg);
+		Session mySess = sessFac.openSession();
+		Transaction objTrans = mySess.beginTransaction();
 		TableOperation objOperation = new TableOperation();
-		objOperation = (TableOperation) ArgMySess.get(TableOperation.class, 1);
+		objOperation = (TableOperation) mySess.get(TableOperation.class, 1);
 		objTrans.commit();
 		emptyObject( objTrans, objOperation);
 		System.out.println("*************************** FIN runFetchOperation() **************************************");

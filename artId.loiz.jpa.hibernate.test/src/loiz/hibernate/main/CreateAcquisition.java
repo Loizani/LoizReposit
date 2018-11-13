@@ -1,4 +1,4 @@
-package loiz.hibenate.main;
+package loiz.hibernate.main;
 
 import org.hibernate.Session;
 
@@ -10,11 +10,11 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
-import org.hibernate.service.ServiceRegistryBuilder;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-import loiz.hibenate.beans.*;
+import loiz.hibernate.beans.*;
    
-public class AddDenreesToExistingAcquisition {
+public class CreateAcquisition {
 //@SuppressWarnings(value = { "unused" })
 	public static void main(String[] args) {		
 		
@@ -27,22 +27,30 @@ public class AddDenreesToExistingAcquisition {
 		hibConf = hibConf.addAnnotatedClass(TablePlaces.class) ;
 		
 		
-		ServiceRegistryBuilder objSerRegBuild = new ServiceRegistryBuilder();
+		StandardServiceRegistryBuilder objSerRegBuild = new StandardServiceRegistryBuilder();
 		objSerRegBuild = objSerRegBuild.applySettings(hibConf.getProperties()) ;
-		ServiceRegistry objSerReg = objSerRegBuild.buildServiceRegistry() ;  
+		ServiceRegistry objSerReg = objSerRegBuild.build() ;  
 		SessionFactory sessFac = hibConf.buildSessionFactory(objSerReg); 
 
 		Session mySess = sessFac.openSession();
 		Transaction objTrans = mySess.beginTransaction();
-		
-		TablePlaces objPlace = (TablePlaces)mySess.get(TablePlaces.class, 1) ;
-		TableOperation objOperation = (TableOperation)mySess.get(TableOperation.class, 1) ;		
-		TableDenrees objNewDenreeToAdd = (TableDenrees)mySess.get(TableDenrees.class, 2) ;		
-		TableAcquisition objAcquisition = new TableAcquisition(objPlace, objOperation, objNewDenreeToAdd, (double)30000 );		
-		
+
+		//TableOperation objOperation = new TableOperation() ;
 		try {
+			TableOperation objOperation = (TableOperation)mySess.get(TableOperation.class, 1) ;
+			TablePlaces objPlace = (TablePlaces)mySess.get(TablePlaces.class, 1) ; 
+			TableDenrees objDenree1 = (TableDenrees)mySess.get(TableDenrees.class, 1) ; 
+			TableDenrees objDenree2 = (TableDenrees)mySess.get(TableDenrees.class, 2) ;					
+			
+			System.out.println("Societe qui va faire une aquisition : " + objOperation.getSocieteOperation()) ; 
+			System.out.println("Denrée 1 de l\'aquisition : " + objDenree1.getNomDenree()) ;
+			System.out.println("Denrée 2 de l\'aquisition : " + objDenree2.getNomDenree()) ; 
+			System.out.println("Place de l\'aquisition : " + objPlace.getNomPlace()) ;
+			TableAcquisition objAcquisition = new  TableAcquisition(objPlace, objOperation, objDenree1, (double)5000);
 			mySess.save(objAcquisition);
-			objTrans.commit();			
+			objTrans.commit();
+			
+			
 		}
 
 		catch (HibernateException hibernateEx) {
