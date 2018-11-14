@@ -3,6 +3,9 @@ package loiz.hibernate.beans;
 import java.io.Serializable;
 import javax.persistence.*;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import java.util.List;
 
 
@@ -13,7 +16,8 @@ import java.util.List;
 @Entity
 @Table(name="TableDenrees", 
 uniqueConstraints=@UniqueConstraint(columnNames={"NomDenree","TypeDenree"}))
-
+@Cacheable
+@Cache(usage=CacheConcurrencyStrategy.READ_ONLY)
 //@NamedQuery(name="TableDenree.findAll", query="SELECT t FROM TableDenree t")
 public class TableDenrees implements Serializable {
 	private static final long serialVersionUID = 1L;
@@ -100,5 +104,13 @@ public class TableDenrees implements Serializable {
 
 		return tableAcquisition;
 	}
+	@Override
+	public String toString() {
+		return "TableDenrees [idDenree=" + idDenree + ", nomDenree=" + nomDenree + ", typeDenree=" + typeDenree
+				+ ", uniteDeVenteDenree=" + uniteDeVenteDenree + ", valeurUniteDenree=" + valeurUniteDenree
+				+ ", tableAcquisitions=" + tableAcquisitions + "]";
+	}
 
+	
+	
 }
