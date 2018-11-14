@@ -49,11 +49,11 @@ class myObjHib {
 		super();
 	}
 
-	public void runFetchOperation(Session ArgMySess ) {
+	public void runFetchOperation(Session ArgMySess ) { 
 		System.out.println("*************************** DEBUT runFetchOperation() **************************************");		
 		Transaction objTrans = ArgMySess.beginTransaction();
   		@SuppressWarnings("unchecked")
-		Query<TableDenrees> myHQLquery = ArgMySess.createQuery("from TableDenrees")	;
+		Query<TableDenrees> myHQLquery = ArgMySess.createQuery("from TableDenrees where TypeDenree = 'Legume'")	;
   		myHQLquery.setCacheable(true);
 		List<TableDenrees> listDenrees = new ArrayList<TableDenrees>();
 		listDenrees = myHQLquery.getResultList()  ;
