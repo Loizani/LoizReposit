@@ -57,8 +57,9 @@ class myObjHib {
   		myHQLquery.setCacheable(true);
 		List<TableDenrees> listDenrees = new ArrayList<TableDenrees>();
 		listDenrees = myHQLquery.getResultList()  ;
+		System.out.println("listDenrees : " + listDenrees +"\n");
 		for(TableDenrees eleD:listDenrees)  
-		System.out.println("listDenrees : " + eleD.toString() +"\n");
+		System.out.println("eleD : " + eleD +"\n");
 		
 
 		objTrans.commit();
