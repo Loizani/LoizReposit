@@ -23,6 +23,9 @@ public class AddDataDenree {
 		List <TableDenrees> listDenrees = new ArrayList<TableDenrees>() ;
 		//public TableDenree(String Arg_nomDenree, String Arg_typeDenree, String Arg_uniteDeVenteDenree, String Arg_valeurUniteDenree) {		
 		listDenrees.add(new TableDenrees("Tomates", "Legume", "tonne", "100"));
+		listDenrees.add(new TableDenrees("Carottes", "Legume", "tonne", "90"));
+		listDenrees.add(new TableDenrees("Aubergines", "Legume", "tonne", "150"));
+		listDenrees.add(new TableDenrees("Fenouille", "Legume", "tonne", "180"));
 		listDenrees.add(new TableDenrees("RIZ", "Feculent", "tonne", "50"));
 		listDenrees.add(new TableDenrees("Farine", "Cereale", "tonne", "200"));
 		
