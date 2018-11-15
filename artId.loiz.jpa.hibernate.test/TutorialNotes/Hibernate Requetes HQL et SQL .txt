@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p><br type="_moz" />
+<u>Les requ&ecirc;tes HQL</u><br />
+- Elles &nbsp;sont sensibles &agrave; la casse<br />
+- Le nom d&#39;une colonne doit en fait &ecirc;tre le nom d&#39;un attribut d&#39;entit&eacute;<br />
+- Le nom de la table doit en fait &ecirc;tre le nom de la table<br />
+Exemple TestSelectColumnsInHQL.java:</p>
+
+<p>SELECT nomDenree, typeDenree, uniteDeVenteDenree, valeurUniteDenree from TableDenrees</p>
+
+<p><u>Les requ&ecirc;tes sql non HQL :</u><br />
+Il est possible d&#39;utiliser des requ&ecirc;tes autres que hql mais des requete sql classiques.<br />
+Dans ce cas, la casse n&#39;a pas d&#39;importance et on fait reference &agrave; des objet sgbd classique (nom de colonne, table etc..)</p>
+
+<p>&nbsp;</p>
+</body>
+</html>

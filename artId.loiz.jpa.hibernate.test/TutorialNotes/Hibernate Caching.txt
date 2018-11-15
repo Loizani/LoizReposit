@@ -74,9 +74,9 @@ nov. 13, 2018 1:15:48 AM org.hibernate.resource.transaction.backend.jdbc.interna
 INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@64355120] for (non-JTA) DDL execution was not in auto-commit mode; the Connection &#39;local transaction&#39; will be committed and the Connection will be set into auto-commit mode.<br />
 *************************** FIN runFetchOperation() **************************************</init></init></em></p>
 
-<p><u>Cache requete HQL :&nbsp;&nbsp;</u><br />
+<p><u>Cache de requete:&nbsp;&nbsp;</u><br />
 1- Mettre &agrave; jour le fichier de configuration xml de hibernate li&eacute; au code &agrave; <property name="hibernate.cache.use_query_cache">true</property><br />
-~&lt;property name=&quot;hibernate.cache.use_query_cache&quot;&gt;true&lt;/property&gt;</p>
+~<property name="hibernate.cache.use_query_cache">true</property></p>
 
 <p>2 - Dans le code java ou est execut&eacute;e la requete hql, mettre que celle ci est cacheable<br />
 Query<tabledenrees> myHQLquery = ArgMySess.createQuery(&quot;from TableDenrees&quot;) ;<br />
