@@ -55,18 +55,19 @@ class myObjHibSQLClassic {
 		System.out.println("*************************** DEBUT runFetchOperation() **************************************");		
 		Transaction objTrans = ArgMySess.beginTransaction();
   		@SuppressWarnings("unchecked")
-  		NativeQuery<Object[]> mySQLquery = ArgMySess.createNativeQuery("SELECT NomDenree,TypeDenree,UniteDeVenteDenree,ValeurUniteDenree FROM TableDenrees");
+//  		NativeQuery<Object[]> mySQLquery = ArgMySess.createNativeQuery("SELECT NomDenree,TypeDenree,UniteDeVenteDenree,ValeurUniteDenree FROM TableDenrees");
 //  		NativeQuery<Object[]> mySQLquery = ArgMySess.createNativeQuery("SELECT * FROM TableDenrees");
+//  		NativeQuery<Object[]> mySQLquery = ArgMySess.createNativeQuery("SELECT TOP (1000) [IdDenree],[NomDenree],[TypeDenree],[UniteDeVenteDenree],[ValeurUniteDenree]  FROM [BaseAcquisitionH].[dbo].[TableDenrees]");
+  		NativeQuery<Object[]> mySQLquery = ArgMySess.createNativeQuery("SELECT * FROM [afer].[dbo].[WEBCOOPA]");
   		mySQLquery.setCacheable(false);		
   		List<Object[]> objListSelectDenrees = mySQLquery.getResultList() ;
 		System.out.println("objSelectDenrees : " + objListSelectDenrees +"\n");
 		
 		for (Object[] eleObj:objListSelectDenrees) {
 			System.out.println("-------------------------------");
-			System.out.println("eleObj[0] : " + eleObj[0] +"\n");		
-			System.out.println("eleObj[1] : " + eleObj[1] +"\n");	
-			System.out.println("eleObj[2] : " + eleObj[2] +"\n");
-			System.out.println("eleObj[3] : " + eleObj[3] +"\n");
+			for(int i=0;i<eleObj.length;i++){						
+			System.out.printf( "<"+eleObj[i] +">, ");
+			}
 			System.out.println("-------------------------------");
 		}
 		

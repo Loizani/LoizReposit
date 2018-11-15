@@ -14,7 +14,14 @@ Exemple TestSelectColumnsInHQL.java:</p>
 
 <p><u>Les requ&ecirc;tes sql non HQL :</u><br />
 Il est possible d&#39;utiliser des requ&ecirc;tes autres que hql mais des requete sql classiques.<br />
-Dans ce cas, la casse n&#39;a pas d&#39;importance et on fait reference &agrave; des objet sgbd classique (nom de colonne, table etc..)</p>
+Dans ce cas, la casse n&#39;a pas d&#39;importance et on fait reference &agrave; des objet sgbd classique (nom de colonne, table etc..)<br />
+<br type="_moz" />
+<u>Remarque :</u><br />
+Je constate que l&#39;on peut acc&eacute;der aux donn&eacute;es d&#39;une table tant que le profil utilis&eacute; dans la configuration hibernate&nbsp;y a acc&egrave;s<br />
+Ceci tant que la requete n&#39;est pas relative, cad designation du sgbd et du shema (dbo ici) &nbsp;:<br />
+SELECT * FROM [afer].[dbo].[WEBCOOPA]</p>
+
+<p>&nbsp;</p>
 
 <p>&nbsp;</p>
 </body>
