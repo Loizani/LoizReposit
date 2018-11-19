@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -32,17 +33,17 @@ public class TableAcquisition implements Serializable {
 	private double montantAcquisition;
 
 	//bi-directional many-to-one association to TableDenree
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="IdExtDenree")
 	private TableDenrees tableDenree;
 
 	//bi-directional many-to-one association to TableOperation
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="IdExtOperation")
 	private TableOperation tableOperation;
 
 	//bi-directional many-to-one association to TablePlace
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="IdExtPlace")
 	private TablePlaces tablePlaces;
 
