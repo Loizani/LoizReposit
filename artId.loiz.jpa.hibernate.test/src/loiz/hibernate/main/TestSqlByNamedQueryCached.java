@@ -63,7 +63,7 @@ class myObjDenreeSqlResultSetMapping {
 					   System.out.println("ele : " + ele);}
 			if (ele instanceof TableDenrees) {
 				TableDenrees eleObj = (TableDenrees)ele ;
-				System.out.println("<" + eleObj.getTypeDenree() + ">,"+"<" + eleObj.getNomDenree() + ">") ;	}							
+				System.out.println("<" + eleObj.getTypeDenree() + ">,"+"<" + eleObj.getNomDenree() + ">"+"<" + eleObj.getTableAcquisitions() + ">") ;	}							
 			else
 				System.out.println("non type denree : <" + ele + ">") ;
 			i++;

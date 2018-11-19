@@ -28,27 +28,24 @@ import java.util.List;
 @Cacheable
 @Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
 
-@NamedNativeQueries({
-    @NamedNativeQuery(
-            name    =   "NQTableDenrees",
-            query   =   "SELECT IDDENREE, TYPEDENREE,NOMDENREE,UNITEDEVENTEDENREE,VALEURUNITEDENREE FROM TABLEDENREES" ,
-                        resultClass=TableDenrees.class
-    )})
+@NamedNativeQueries({ @NamedNativeQuery(name = "NQTableDenrees",
+		// query = "SELECT IDDENREE,
+		// TYPEDENREE,NOMDENREE,UNITEDEVENTEDENREE,VALEURUNITEDENREE FROM
+		// TABLEDENREES" , 
+		query = "SELECT IDDENREE, TYPEDENREE, NOMDENREE,UNITEDEVENTEDENREE,VALEURUNITEDENREE, TABLEACQUISITIONS.IDACQUISITION,"
+				+ " TABLEACQUISITIONS.MONTANTACQUISITION FROM TABLEDENREES, TABLEACQUISITIONS "
+				+ " WHERE TABLEACQUISITIONS.IDEXTDENREE = TABLEDENREES.IDDENREE", resultClass = TableDenrees.class) })
 
+@SqlResultSetMapping(name = "TableDenreesRequete", columns = { @ColumnResult(name = "TypeDenree"),
+		@ColumnResult(name = "NomDenree") })
 
-@SqlResultSetMapping(name = "TableDenreesRequete", 
-					 columns={@ColumnResult(name="TypeDenree"),
-				              @ColumnResult(name="NomDenree")})
-
-@SqlResultSetMapping(name = "TableDenrees",
-					entities = {
-								@EntityResult(entityClass = loiz.hibernate.beans.TableDenrees.class,
-								fields = {
-											@FieldResult(name = "idDenree", column = "IdDenree"),
-											@FieldResult(name = "nomDenree", column = "NomDenree"),
-											@FieldResult(name = "typeDenree", column = "TypeDenree"),
-											@FieldResult(name = "uniteDeVenteDenree", column = "uniteDeVenteDenree"),
-											@FieldResult(name = "valeurUniteDenree", column = "ValeurUniteDenree") }) })
+@SqlResultSetMapping(name = "TableDenrees", entities = {
+		@EntityResult(entityClass = loiz.hibernate.beans.TableDenrees.class, fields = {
+				@FieldResult(name = "idDenree", column = "IdDenree"),
+				@FieldResult(name = "nomDenree", column = "NomDenree"),
+				@FieldResult(name = "typeDenree", column = "TypeDenree"),
+				@FieldResult(name = "uniteDeVenteDenree", column = "uniteDeVenteDenree"),
+				@FieldResult(name = "valeurUniteDenree", column = "ValeurUniteDenree") }) })
 @Table(name = "TableDenrees", uniqueConstraints = @UniqueConstraint(columnNames = { "NomDenree", "TypeDenree" }))
 
 // @NamedQuery(name="TableDenree.findAll", query="SELECT t FROM TableDenree t")
