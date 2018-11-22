@@ -3,8 +3,6 @@ package loiz.explore.so.bean;
 import java.io.Serializable;
 import javax.persistence.*;
 import java.util.List;
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 /**
  * The persistent class for the TableOperations database table.

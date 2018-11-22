@@ -4,11 +4,7 @@ import java.io.Serializable;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import javax.persistence.SqlResultSetMapping;
-import javax.persistence.EntityResult;
-import javax.persistence.FieldResult;
 import javax.persistence.UniqueConstraint;
-import javax.persistence.Cacheable;
 import javax.persistence.Id;
 import javax.persistence.NamedNativeQueries;
 import javax.persistence.NamedNativeQuery;
@@ -16,10 +12,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Column;
-import javax.persistence.ColumnResult;
-
-import org.hibernate.annotations.Cache;
-import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import java.util.List;
 /* The persistent class for the TableDenrees database table */
