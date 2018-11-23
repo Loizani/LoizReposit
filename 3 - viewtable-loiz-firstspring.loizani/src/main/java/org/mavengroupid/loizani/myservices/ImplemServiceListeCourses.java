@@ -12,10 +12,13 @@ public class ImplemServiceListeCourses implements InterfaceServiceListeCourses {
 
     @Autowired
     private InterfaceDaoListeCourses dao;
-
+ 
     @Transactional(readOnly=true)
-    public List<EntityCourse> rechercherCourses() {
-    	System.out.println("dans l\'implementation du service \"ImplemServiceListeCourses\"");
-        return dao.rechercherCourses();
+    public List<EntityCourse> rechercherListeCourses() {    	
+        return dao.rechercherListeCourses();}
+    
+    @Transactional(readOnly=true)
+    public EntityCourse rechercherPremiereCourses() {
+   		return dao.rechercherPremiereCourse();}
+    		
     }
-}

@@ -8,29 +8,8 @@
 <title><spring:message code="titre.bonjour"/></title>
 </head>
 <body>
-	<table border="1">
-		<thead>
-			<tr>
-				<th colspan=3>over titre</th>
-			</tr>
-			<tr>
-				<th><spring:message code="colonne.identifiant" /></th>
-				<th><spring:message code="colonne.libelle" /></th>
-				<th><spring:message code="colonne.quantite" /></th>
-			</tr>
-		</thead>
-		<tbody>
-			<c:forEach items="${listeCourses}" var="course">
-				<tr>
-					<td><c:out value="${course.id}" /></td>
-					<td><c:out value="${course.libelle}" /></td>
-					<td><c:out value="${course.quantite}" /></td>
-				</tr>
-			</c:forEach>
-		</tbody>
-	</table>
 	<br />
-	<p>voici la premiere valeur :</p>
+	<p>Page dedié a la remiere valeur :</p>
 		<table border="1">
 		<thead>			
 			<tr>

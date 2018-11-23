@@ -8,6 +8,8 @@
 <title><spring:message code="titre.bonjour"/></title>
 </head>
 <body>
-<p><a href="afficherListeCourses" >Tester LECTURE données sql persistente Hibernate</a></p>
+<p><a href="afficherListeCourses" >Tester LECTURE liste courses</a></p>
+<p><a href="afficherpremiereCourse" >Tester LECTURE premiere course</a></p>
+
 </body>
 </html>

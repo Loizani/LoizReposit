@@ -9,7 +9,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 import org.springframework.stereotype.Repository;
-
+import org.hibernate.query.Query;
 import org.mavengroupid.loizani.bean.EntityCourse;
 
 @Repository
@@ -18,7 +18,7 @@ public class ImplemDaoListeCourses implements InterfaceDaoListeCourses {
     @PersistenceContext
     private EntityManager privObjEntityManager;
  
-    public List<EntityCourse> rechercherCourses() {
+    public List<EntityCourse> rechercherListeCourses() {
         final CriteriaBuilder lCriteriaBuilder = privObjEntityManager.getCriteriaBuilder() ; 
         final CriteriaQuery<EntityCourse> lCriteriaQuery = lCriteriaBuilder.createQuery(EntityCourse.class) ; 
         final Root<EntityCourse> lRoot = lCriteriaQuery.from(EntityCourse.class) ; 
@@ -27,4 +27,11 @@ public class ImplemDaoListeCourses implements InterfaceDaoListeCourses {
       
         return lTypedQuery.getResultList() ; 
     }
+    public EntityCourse rechercherPremiereCourse() {
+        @SuppressWarnings("unchecked")
+		Query<List<EntityCourse>> myQuery = (Query<List<EntityCourse>>) privObjEntityManager.createQuery("from EntityCourse where id = 1");
+        EntityCourse ec = (EntityCourse)myQuery.uniqueResult();
+        return ec ; 
+    }
+    
 }
