@@ -29,17 +29,19 @@ public class withoutServiceRegistry {
 		int intNext = myList.size() + 1;
 
 		TableSociete objTS = new TableSociete("nomSociete" + intNext, "paysSociete" + intNext,"adresseSociete" + intNext);
-		em.persist(objTS);
+		em.persist(objTS);	
+		em.remove(objTS);
 		em.getTransaction().commit();
-
+		
 		//Commit par session
-		intNext = 14;
+/*		intNext = 14;
 		objTS = new TableSociete("nomSociete" + intNext, "paysSociete" + intNext, "adresseSociete" + intNext);        
 		org.hibernate.Session session = (Session) em.getDelegate();
 		Transaction objTrans = session.beginTransaction();
 		session.save(objTS);
+		session.remove(objTS);
 		objTrans.commit();
-		em.close();
+		em.close();*/
 
 		System.out.println("Entity saved.");
 

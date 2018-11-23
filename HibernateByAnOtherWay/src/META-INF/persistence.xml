@@ -16,7 +16,7 @@
             <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost\SQLEXPRESS;database=JpaProjectLoizDB" />
             <property name="javax.persistence.jdbc.user" value="SA"/>
             <property name="javax.persistence.jdbc.password" value="P@ssword01"/>
-            <property name="show_sql" value="true" />
+            <property name="hibernate.show_sql" value="true" />
         </properties>
     </persistence-unit>
 </persistence>
