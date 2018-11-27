@@ -1,11 +1,6 @@
-(function(){
-	
 'use strict';
 
-//angular.module('myApp').factory('UserService', ['$http', '$q', UserService])
-angular.module('myApp', []).factory('UserService',['$http','$q',UserService])
-
-function UserService($http,$q){		
+var UserService = function ($http,$q){		
 
     var REST_SERVICE_URI = 'http://localhost:8080/Spring4MVCAngularJSExample/user/';
 
@@ -78,8 +73,6 @@ function UserService($http,$q){
     };
 
     return factory;
+} ;
 
-
-
-} // fin function UserService($http,$q){
-})();
+angular.module('myApp', []).factory('UserService',['$http','$q',UserService])	
