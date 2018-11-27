@@ -1,17 +1,13 @@
+(function(){
+	
 'use strict';
 
-angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $q){
+//angular.module('myApp').factory('UserService', ['$http', '$q', UserService])
+angular.module('myApp', []).factory('UserService',['$http','$q',UserService])
+
+function UserService($http,$q){		
 
     var REST_SERVICE_URI = 'http://localhost:8080/Spring4MVCAngularJSExample/user/';
-
-    var factory = {
-        fetchAllUsers: fetchAllUsers,
-        createUser: createUser,
-        updateUser:updateUser,
-        deleteUser:deleteUser
-    };
-
-    return factory;
 
     function fetchAllUsers() {
         var deferred = $q.defer();
@@ -73,5 +69,17 @@ angular.module('myApp').factory('UserService', ['$http', '$q', function($http, $
         );
         return deferred.promise;
     }
+    
+    var factory = {
+        fetchAllUsers: fetchAllUsers,
+        createUser: createUser,
+        updateUser:updateUser,
+        deleteUser:deleteUser
+    };
 
-}]);
+    return factory;
+
+
+
+} // fin function UserService($http,$q){
+})();
