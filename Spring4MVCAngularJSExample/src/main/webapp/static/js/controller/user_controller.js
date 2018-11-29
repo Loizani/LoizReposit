@@ -1,42 +1,59 @@
 'use strict';
 
-angular.module('myApp').controller('UserController', ['$scope', 'UserService', function($scope, UserService) {
-    var self = this;
+
+
+angular.module('myApp').controller('UserController', ['$scope', 'UserFactory', function($scope, UserFactory) {
+	
+   var self = this;	    
     self.user={id:null,username:'',address:'',email:''};
     self.users=[];
-
     self.submit = submit;
     self.edit = edit;
     self.remove = remove;
     self.reset = reset;
-
-
+    self.fetchAllUsers = fetchAllUsers ;
+    self.NonExistingURL = NonExistingURL ;
+    
     fetchAllUsers();
-
+    
+    function NonExistingURL(){
+        console.log('Dans localfactNonExistingURL');
+        UserFactory.localfactNonExistingURL()
+             .then(
+             function(reponse) {
+                 console.log("localfactNonExistingURL > reponse : " + reponse);
+             },
+             function(errResponse){
+                 console.error("localfactNonExistingURL > errResponse = " + errResponse );
+             }
+         );
+     } ;
+    
     function fetchAllUsers(){
-        UserService.fetchAllUsers()
-            .then(
-            function(d) {
-                self.users = d;
-            },
-            function(errResponse){
-                console.error('Error while fetching Users');
-            }
-        );
-    }
-
+        console.log('Dans fetchAllUsers');
+        UserFactory.factoryFetchAllUsers()
+             .then(
+             function(d) {
+                 self.users = d;
+                 console.log('d : ' + d);
+             },
+             function(errResponse){
+                 console.error('Error while fetching Users');
+             }
+         );
+     } ;
+    
     function createUser(user){
-        UserService.createUser(user)
-            .then(
-            fetchAllUsers,
-            function(errResponse){
-                console.error('Error while creating User');
-            }
+        UserFactory.factoryCreateUser(user)
+            .then(  fetchAllUsers,
+            		function(errResponse){
+                		console.error('Error while creating User');
+            		}
         );
     }
-
+    
     function updateUser(user, id){
-        UserService.updateUser(user, id)
+        UserFactory.factoryUpdateUser(user, id)
             .then(
             fetchAllUsers,
             function(errResponse){
@@ -44,17 +61,7 @@ angular.module('myApp').controller('UserController', ['$scope', 'UserService', f
             }
         );
     }
-
-    function deleteUser(id){
-        UserService.deleteUser(id)
-            .then(
-            fetchAllUsers,
-            function(errResponse){
-                console.error('Error while deleting User');
-            }
-        );
-    }
-
+    
     function submit() {
         if(self.user.id===null){
             console.log('Saving New User', self.user);
@@ -76,6 +83,16 @@ angular.module('myApp').controller('UserController', ['$scope', 'UserService', f
         }
     }
 
+    function deleteUser(id){
+        UserFactory.factoryDeleteUser(id)
+            .then(
+            fetchAllUsers,
+            function(errResponse){
+                console.error('Error while deleting User');
+            }
+        );
+    }
+    
     function remove(id){
         console.log('id to be deleted', id);
         if(self.user.id === id) {//clean form if the user to be deleted is shown there.
