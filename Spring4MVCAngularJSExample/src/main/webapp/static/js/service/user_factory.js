@@ -6,7 +6,8 @@ function UserFactory($http,$q){
 
     var REST_SERVICE_URI = 'http://localhost:8080/Spring4MVCAngularJSExample/user/';
     var REST_SERVICE_DELETE_URI = 'http://localhost:8080/Spring4MVCAngularJSExample/deleteuser/';
-    
+//    var REST_SERVICE_URI = '/user/';
+//    var REST_SERVICE_DELETE_URI = '/deleteuser/';
     
     //function factFetchAllUsers($http, $q) {
     function localfactFetchAllUsers() {
@@ -60,24 +61,7 @@ function UserFactory($http,$q){
                     });
         
         return deferred.promise;
-    };
-    
-/*    function  localfactNonExistingURL() {
-    	var deferred = $q.defer();
-        $http.get("http://127.0.0.1/server/hello_endpoint")
-             .then(
-                      function(response)  {
-          console.log("UserFactory > localfactNonExistingURL() >  $http.then(function(response)");
-          return response.data;})
-             .catch(
-         function(error)  {
-          console.log("UserFactory > localfactNonExistingURL() > $http.catch(function(error) > error = "+ error);})
-             .finally(
-         function()  {
-          console.log("UserFactory > localfactNonExistingURL() > $http.finally > traitement exécuté toute façon");});
-        return deferred.promise;
-   }*/
-    
+    };    
     
     function localfactCreateUser(user) {
         var deferred = $q.defer();

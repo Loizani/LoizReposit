@@ -32,12 +32,18 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
+<script src="<c:url value='/static/jslib/angular.js' />"></script>
+<script src="<c:url value='/static/jslib/angular-ui-router.js' />"></script>
+<script src="<c:url value='/static/js/app.js' />"></script>
+<script src="<c:url value='/static/js/service/user_factory.js' />"></script>
+<script src="<c:url value='/static/js/controller/user_controller.js' />"></script>
+
 </head>
 <body ng-app="myApp" class="ng-cloak">
 	<div class="generic-container" ng-controller="UserController as ctrl">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<span class="lead">User Registration Form </span>
+				<span class="lead">User Registration Form  par $State #/userState<</span>
 			</div>
 			<div class="formcontainer">
 				<form ng-submit="ctrl.submit()" name="myForm"
@@ -107,9 +113,6 @@
 				<span ng-click="ctrl.NonExistingURL()" class="btn-success">
 					Lister	les Users
 				</span>
-				<span ng-click="ctrl.gotoUserState()" class="btn-success">
-					vers userState
-				</span>
 			</div>
 			<div class="tablecontainer">
 				<table class="table table-hover">
@@ -141,10 +144,6 @@
 		</div>
 	</div>
 
-<script src="<c:url value='/static/jslib/angular.js' />"></script>
-<script src="<c:url value='/static/jslib/angular-ui-router.js' />"></script>
-<script src="<c:url value='/static/js/app.js' />"></script>
-<script src="<c:url value='/static/js/service/user_factory.js' />"></script>
-<script src="<c:url value='/static/js/controller/user_controller.js' />"></script>
+
 </body>
 </html>

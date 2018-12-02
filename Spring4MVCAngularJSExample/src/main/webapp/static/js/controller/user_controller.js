@@ -2,7 +2,7 @@
 
 
 
-angular.module('myApp').controller('UserController', ['$scope', 'UserFactory', function($scope, UserFactory) {
+angular.module('myApp').controller('UserController', ['$scope', '$stateProvider', 'UserFactory', function($scope, $stateProvider, UserFactory) {
 	
    var self = this;	    
     self.user={id:null,username:'',address:'',email:''};
@@ -13,8 +13,14 @@ angular.module('myApp').controller('UserController', ['$scope', 'UserFactory', f
     self.reset = reset;
     self.fetchAllUsers = fetchAllUsers ;
     self.NonExistingURL = NonExistingURL ;
+    self.gotoUserState = gotoUserState ;
     
     fetchAllUsers();
+    
+    function gotoUserState(){   
+    console.log('tentative de changement de page vers \'userState\'');	
+    $state.go('userState' , {}, {reload : true}) ;
+    }
     
     function NonExistingURL(){
         console.log('Dans localfactNonExistingURL');
