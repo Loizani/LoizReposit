@@ -1,7 +1,16 @@
 'use strict';
 
 var App = angular.module('myApp',['ui.router']);
+var spy = function(strLog) {
+	console.log(strLog);
+}
 
+var getKeys = function(argLog, obj) {
+	// var keys = [];
+	for ( var key in obj) {
+		spy(argLog + " - " + key + ".value  = " + obj[key]);
+	}
+}
 App.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 	
 	$urlRouterProvider.otherwise("/category")
@@ -13,7 +22,8 @@ App.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		controller : "CategoryController as ctgController",
 		resolve: {
             async: ['ItemService', function(ItemService) {
-                return ItemService.fetchCategoryList();
+                var data =  ItemService.fetchCategoryList();
+                return data ;
            	}]
         }
 	})

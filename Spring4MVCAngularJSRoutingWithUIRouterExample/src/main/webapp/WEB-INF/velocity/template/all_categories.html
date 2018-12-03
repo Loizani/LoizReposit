@@ -3,11 +3,20 @@
 		<div class="panel panel-default">
 			<!-- Default panel contents -->
 		    <div class="panel-heading"><span class="lead">All Categories</span></div>
+		    <p>ctgController.categories : {{ctgController.categories}}</p>
+		    <p>ctgController.fetchall() : {{ctgController.fetchall()}}</p>
+		    <p>ctgController.CatFactory.$$state.value : {{ctgController.CatFactory.$$state.value}}</p>
+		    
+		    <p><span ng-click="ctgController.fetchall()">fetcher categorie !</span></p>
 		    <div class="tablecontainer">
 				<ul>
-				  <li ng-repeat="category in ctgController.categories">{{item}}
-				  		<a ui-sref="category.list({categoryId:category})">{{category}}</a>
-				  </li>
+				<li ng-repeat="category in ctgController.categories">
+				         <a ui-sref="category.list({categoryId:category})">
+				               category : {{category}}
+				         </a>
+<!-- 			<li ng-repeat="category in ctgController.categories">{{item}} -->
+<!-- 				  		<a ui-sref="category.list({categoryId:category})">{{category}}</a> -->
+				</li>
 				</ul>
 			</div>
 		</div>
