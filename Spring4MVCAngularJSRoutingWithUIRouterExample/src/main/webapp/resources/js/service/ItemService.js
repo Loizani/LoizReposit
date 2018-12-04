@@ -1,11 +1,13 @@
 'use strict';
 
-App.factory('ItemService', ['$http', '$q', function($http, $q){
+App.factory('appFactory', ['$http', '$q',gestionDesURIsSpringMVC]);
+
+ function  gestionDesURIsSpringMVC ($http, $q) {
 	var URI_CATEGORIES = "http://localhost:8080/Spring4MVCAngularJSRoutingWithUIRouterExample/categories";
 	var dataCategoryList ;
 	
 	var fetchCategoryList =  function() {//Fetches category list from server.
-		return $http.get(URI_CATEGORIES)
+		return $http.get(URI_CATEGORIES) 
 		.then(
 					function(response){
 						dataCategoryList = response.data;
@@ -50,4 +52,4 @@ App.factory('ItemService', ['$http', '$q', function($http, $q){
 			}
 	};
 
-}]);
+};

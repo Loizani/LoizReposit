@@ -3,7 +3,7 @@
 var App = angular.module('myApp',['ui.router']);
 var spy = function(strLog) {
 	console.log(strLog);
-}
+} 
 
 var getKeys = function(argLog, obj) {
 	// var keys = [];
@@ -21,8 +21,8 @@ App.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		templateUrl: 'category',
 		controller : "CategoryController as ctgController",
 		resolve: {
-            async: ['ItemService', function(ItemService) {
-                var data =  ItemService.fetchCategoryList();
+            async: ['appFactory', function(appFactory) {
+                var data =  appFactory.fetchCategoryList();
                 return data ;
            	}]
         }
@@ -33,8 +33,8 @@ App.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		templateUrl: function(params){ return 'category/' + params.categoryId; },
 		controller : "ItemListController as itemListCtrl",
 		resolve: {
-            async: ['ItemService', '$stateParams', function(ItemService, $stateParams) {
-                return ItemService.fetchAllItems($stateParams.categoryId);
+            async: ['appFactory', '$stateParams', function(appFactory, $stateParams) {
+                return appFactory.fetchAllItems($stateParams.categoryId);
            	}]
         }
 	})
@@ -44,8 +44,8 @@ App.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 		templateUrl: function(params){ return 'category/' + params.categoryId +'/'+params.itemId; },
 		controller : "ItemDetailsController as itemDetailsCtrl",
 		resolve: {
-            async: ['ItemService', '$stateParams', function(ItemService, $stateParams) {
-                return ItemService.fetchSpecificItem($stateParams.categoryId, $stateParams.itemId);
+            async: ['appFactory', '$stateParams', function(appFactory, $stateParams) {
+                return appFactory.fetchSpecificItem($stateParams.categoryId, $stateParams.itemId);
            	}]
         }
 	})

@@ -1,7 +1,7 @@
 'use strict';
-
+ 
 App.controller('CategoryController', [ 'async', '$scope', '$state',
-		'ItemService', function(async, $scope, $state, ItemService) {
+		'appFactory', function(async, $scope, $state, appFactory) {
 			
 			var spy = function(strLog) {
 				console.log(strLog);
@@ -15,19 +15,21 @@ App.controller('CategoryController', [ 'async', '$scope', '$state',
 			}
 
 			var vm = this;
+			vm.asyncCategories = async;
 			vm.categories = async;
 			vm.fetchall = function() {
 				//console.log("Dans fetchall");
-				var result = ItemService.getDataCategoryList();
-				console.log("fetchall() > data = '" + data + "'");
+				var result = appFactory.getDataCategoryList();
+				console.log("fetchall() > data = '" + result + "'");
 				return (result);
 			};
 			var datafechCatFactory ;
 			function fechCatFactory () {
 				console.log("Dans fechCatFactory");
-                var data =  ItemService.fetchCategoryList();
-                datafechCatFactory = data ;
-                return data ;
+                var opbjData =  appFactory.fetchCategoryList();
+                getKeys(opbjData);
+                datafechCatFactory = opbjData ;
+                return opbjData ;
            	};
 			
            	vm.CatFactory = fechCatFactory();
