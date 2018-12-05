@@ -28,9 +28,8 @@ public class HelloWorldRestController {
     UserService userService;  //Service which will do all data retrieval/manipulation work
  
     
-    //-------------------Retrieve All Users--------------------------------------------------------
-     
-    @RequestMapping(value = "/user/", method = RequestMethod.GET)
+    //-------------------Retrieve All Users--------------------------------------------------------     
+    @RequestMapping(value = "/AllUsers", method = RequestMethod.GET)
     public ResponseEntity<List<User>> listAllUsers() {
         List<User> users = userService.findAllUsers();
         if(users.isEmpty()){
@@ -56,8 +55,7 @@ public class HelloWorldRestController {
  
      
      
-    //-------------------Create a User--------------------------------------------------------
-     
+    //-------------------Create a User--------------------------------------------------------     
     @RequestMapping(value = "/user/", method = RequestMethod.POST)
     public ResponseEntity<Void> createUser(@RequestBody User user,    UriComponentsBuilder ucBuilder) {
         System.out.println("Creating User " + user.getUsername());
@@ -98,14 +96,6 @@ public class HelloWorldRestController {
         userService.updateUser(currentUser);
         return new ResponseEntity<User>(currentUser, HttpStatus.OK);
     }
- 
-//    @RequestMapping(value = "/deleteuser/{id}", method = RequestMethod.GET)
-//    public void deleteUserbyGetMethod(@PathVariable("id") long id) {    	
-//        System.out.println("Echec de suppression User No " + id + " car method GET");
-//    }
-//    
-   
-   
     
     //------------------- Delete a User --------------------------------------------------------               
     @RequestMapping(value = "/deleteuser/{id}", method = RequestMethod.POST)

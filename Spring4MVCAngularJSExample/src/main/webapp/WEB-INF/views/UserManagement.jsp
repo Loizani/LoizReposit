@@ -4,36 +4,29 @@
 <html>
 <head>
 <title>AngularJS $http Example</title>
-<style>
-.username.ng-valid {
-	background-color: lightgreen;
-}
-
-.username.ng-dirty.ng-invalid-required {
-	background-color: red;
-}
-
-.username.ng-dirty.ng-invalid-minlength {
-	background-color: yellow;
-}
-
-.email.ng-valid {
-	background-color: lightgreen;
-}
-
-.email.ng-dirty.ng-invalid-required {
-	background-color: red;
-}
-
-.email.ng-dirty.ng-invalid-email {
-	background-color: yellow;
-}
-</style>
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link href="<c:url value='/static/css/app.css' />" rel="stylesheet"></link>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular-route.js"></script>
+<script src="resources/js/app.js"></script>
+<script src="resources/js/service/user_factory.js"></script>
+<script src="resources/js/controller/user_controller.js"></script>
+<link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="resources/css/app.css" ></link>
 </head>
 <body ng-app="myApp" class="ng-cloak">
+<body>
+ <table>
+   <caption>
+      <strong>Tab1. Liste de prix des livres</strong> Ce tableau liste l'ensemble de notre catalogue de livres et renseigne les prix 2014 hors frais de port  ainsi que sa disponibilité en version numérique
+   </caption>
+   <thead>
+     <tr>
+       <th>Titre livre</th>
+       <th>Téléchargeable</th>
+       <th>Prix TTC</th>
+     </tr>
+   </thead>
+</table>  
 	<div class="generic-container" ng-controller="UserController as ctrl">
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -59,7 +52,6 @@
 							</div>
 						</div>
 					</div>
-
 
 					<div class="row">
 						<div class="form-group col-md-12">
@@ -141,10 +133,6 @@
 		</div>
 	</div>
 
-<script src="<c:url value='/static/jslib/angular.js' />"></script>
-<script src="<c:url value='/static/jslib/angular-ui-router.js' />"></script>
-<script src="<c:url value='/static/js/app.js' />"></script>
-<script src="<c:url value='/static/js/service/user_factory.js' />"></script>
-<script src="<c:url value='/static/js/controller/user_controller.js' />"></script>
+
 </body>
 </html>
