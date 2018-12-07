@@ -35,6 +35,7 @@ public class HelloWorldRestController {
         if(users.isEmpty()){
             return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);//You many decide to return HttpStatus.NOT_FOUND
         }
+        System.out.println("HelloWorldRestController > listAllUsers() : mapping \"/AllUsers\"");
         return new ResponseEntity<List<User>>(users, HttpStatus.OK);
     }
  

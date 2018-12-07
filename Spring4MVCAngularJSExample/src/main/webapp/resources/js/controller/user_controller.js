@@ -1,6 +1,6 @@
 'use strict';     
 
-App.controller('UserController', ['$scope','$state', 'UserFactory', function($scope,$state,UserFactory) {
+App.controller('UserController', ['$scope','$state', '$window', 'UserFactory', function($scope,$state,$window,UserFactory) {
 		
 		   var self = this;	    
 		    self.user={id:null,username:'',address:'',email:''};
@@ -14,10 +14,16 @@ App.controller('UserController', ['$scope','$state', 'UserFactory', function($sc
 		    
 		    fetchAllUsers();
 		    
-		    function gotoUserState(){   
-		    console.log('tentative de changement de page vers \'userState\'');	
-		    $state.go('userState' , {}, {reload : true}) ;
-		    }
+//		    function gotoUserState(){   
+//		    console.log('tentative de changement de page vers \'preppareNGstate\'');	
+//		    $state.go('preppareNGstate' , {}, {reload : true}) ;
+//		    }
+		    
+		    function gotoUserState () {
+		    	console.log('tentative V2 de changement de page vers \'preppareNGstate\'');
+		        $window.open('preppareNGstate', '_self');
+		    };
+		    
 		    
 		    function NonExistingURL(){
 		        console.log('Dans localfactNonExistingURL');
