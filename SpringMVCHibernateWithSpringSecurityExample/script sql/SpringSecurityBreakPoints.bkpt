@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breakpoints>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/AbstractDaoWithGenerics.java" type="1"/>
+<marker charStart="490" lineNumber="18" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="490"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{AbstractDaoWithGenerics.java[AbstractDaoWithGenerics"/>
+<attrib name="charEnd" value="632"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:AbstractDaoWithGenerics [line: 18] - AbstractDaoWithGenerics()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.AbstractDaoWithGenerics"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/AbstractDaoWithGenerics.java" type="1"/>
+<marker charStart="765" lineNumber="25" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="765"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{AbstractDaoWithGenerics.java[AbstractDaoWithGenerics"/>
+<attrib name="charEnd" value="809"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:AbstractDaoWithGenerics [line: 25] - localeGetSession()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.AbstractDaoWithGenerics"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/AbstractDaoWithGenerics.java" type="1"/>
+<marker charStart="880" lineNumber="30" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="880"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{AbstractDaoWithGenerics.java[AbstractDaoWithGenerics"/>
+<attrib name="charEnd" value="938"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:AbstractDaoWithGenerics [line: 30] - getByKey(PK)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.AbstractDaoWithGenerics"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/AbstractDaoWithGenerics.java" type="1"/>
+<marker charStart="980" lineNumber="34" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="980"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{AbstractDaoWithGenerics.java[AbstractDaoWithGenerics"/>
+<attrib name="charEnd" value="1017"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:AbstractDaoWithGenerics [line: 34] - persist(T)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.AbstractDaoWithGenerics"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/AbstractDaoWithGenerics.java" type="1"/>
+<marker charStart="1058" lineNumber="38" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1058"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{AbstractDaoWithGenerics.java[AbstractDaoWithGenerics"/>
+<attrib name="charEnd" value="1094"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:AbstractDaoWithGenerics [line: 38] - update(T)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.AbstractDaoWithGenerics"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/AbstractDaoWithGenerics.java" type="1"/>
+<marker charStart="1135" lineNumber="42" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1135"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{AbstractDaoWithGenerics.java[AbstractDaoWithGenerics"/>
+<attrib name="charEnd" value="1171"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:AbstractDaoWithGenerics [line: 42] - delete(T)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.AbstractDaoWithGenerics"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/AbstractDaoWithGenerics.java" type="1"/>
+<marker charStart="1290" lineNumber="47" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1290"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{AbstractDaoWithGenerics.java[AbstractDaoWithGenerics"/>
+<attrib name="charEnd" value="1347"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:AbstractDaoWithGenerics [line: 47] - createEntityCriteria()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.AbstractDaoWithGenerics"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringBonjourNoMavenCopie/code/org/nomaven/loiz/ctrl/BonjourSpringNoMaven.java" type="1"/>
+<marker charStart="812" lineNumber="18" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="812"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringBonjourNoMavenCopie/code&lt;org.nomaven.loiz.ctrl{BonjourSpringNoMaven.java[BonjourSpringNoMaven"/>
+<attrib name="charEnd" value="859"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:BonjourSpringNoMaven [line: 18] - affichebonjour(ModelMap)"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.nomaven.loiz.ctrl.BonjourSpringNoMaven"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringBonjourNoMavenCopie/code/org/nomaven/loiz/ctrl/BonjourSpringNoMaven.java" type="1"/>
+<marker charStart="915" lineNumber="20" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="915"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringBonjourNoMavenCopie/code&lt;org.nomaven.loiz.ctrl{BonjourSpringNoMaven.java[BonjourSpringNoMaven"/>
+<attrib name="charEnd" value="941"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.jdt.debug.core.installCount" value="0"/>
+<attrib name="message" value="Line breakpoint:BonjourSpringNoMaven [line: 20] - affichebonjour(ModelMap)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="org.nomaven.loiz.ctrl.BonjourSpringNoMaven"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/ConfigurationHibernate.java" type="1"/>
+<marker charStart="1184" lineNumber="31" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1184"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{ConfigurationHibernate.java[ConfigurationHibernate"/>
+<attrib name="charEnd" value="1266"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ConfigurationHibernate [line: 31] - sessionFactory()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.ConfigurationHibernate"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/ConfigurationHibernate.java" type="1"/>
+<marker charStart="1615" lineNumber="41" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1615"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{ConfigurationHibernate.java[ConfigurationHibernate"/>
+<attrib name="charEnd" value="1696"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ConfigurationHibernate [line: 41] - dataSource()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.ConfigurationHibernate"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/ConfigurationHibernate.java" type="1"/>
+<marker charStart="2168" lineNumber="51" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2168"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{ConfigurationHibernate.java[ConfigurationHibernate"/>
+<attrib name="charEnd" value="2248"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ConfigurationHibernate [line: 51] - hibernateProperties()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.ConfigurationHibernate"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/ConfigurationHibernate.java" type="1"/>
+<marker charStart="2759" lineNumber="62" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2759"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{ConfigurationHibernate.java[ConfigurationHibernate"/>
+<attrib name="charEnd" value="2844"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ConfigurationHibernate [line: 62] - transactionManager(SessionFactory)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.ConfigurationHibernate"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="2122" lineNumber="61" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2122"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="2176"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 61] - listUsers(ModelMap)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="2487" lineNumber="72" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2487"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="2524"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 72] - newUser(ModelMap)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="3007" lineNumber="87" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="3007"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="3034"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 87] - saveUser(EntityUser, BindingResult, ModelMap)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="4250" lineNumber="119" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="4250"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="4299"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 119] - editUser(String, ModelMap)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="4768" lineNumber="132" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="org.eclipse.jdt.debug.core.conditionEnabled" value="false"/>
+<attrib name="charStart" value="4768"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="4795"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 132] - updateUser(EntityUser, BindingResult, ModelMap, String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="5976" lineNumber="169" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="5976"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="6014"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 169] - initializeProfiles()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="6207" lineNumber="177" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="6207"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="6260"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 177] - accessDeniedPage(ModelMap)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="6549" lineNumber="187" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="6549"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="6592"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 187] - loginPage()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="6966" lineNumber="200" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="6966"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="7045"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 200] - logoutPage(HttpServletRequest, HttpServletResponse)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="7448" lineNumber="213" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="7448"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="7473"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 213] - getPrincipal()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/controller/ControleurApplication.java" type="1"/>
+<marker charStart="7905" lineNumber="228" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="7905"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.controller{ControleurApplication.java[ControleurApplication"/>
+<attrib name="charEnd" value="8003"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ControleurApplication [line: 228] - isCurrentAuthenticationAnonymous()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.controller.ControleurApplication"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/security/ImplementedSecurity_UserDetailsService.java" type="1"/>
+<marker charStart="1358" lineNumber="34" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1358"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.security{ImplementedSecurity_UserDetailsService.java[ImplementedSecurity_UserDetailsService"/>
+<attrib name="charEnd" value="1407"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedSecurity_UserDetailsService [line: 34] - loadUserByUsername(String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.security.ImplementedSecurity_UserDetailsService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/security/ImplementedSecurity_UserDetailsService.java" type="1"/>
+<marker charStart="1814" lineNumber="46" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1814"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.security{ImplementedSecurity_UserDetailsService.java[ImplementedSecurity_UserDetailsService"/>
+<attrib name="charEnd" value="1890"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedSecurity_UserDetailsService [line: 46] - getGrantedAuthorities(EntityUser)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.security.ImplementedSecurity_UserDetailsService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/ImplementedUserDao.java" type="1"/>
+<marker charStart="677" lineNumber="25" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="677"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{ImplementedUserDao.java[ImplementedUserDao"/>
+<attrib name="charEnd" value="710"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserDao [line: 25] - findById(int)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.ImplementedUserDao"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/ImplementedUserDao.java" type="1"/>
+<marker charStart="854" lineNumber="34" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="854"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{ImplementedUserDao.java[ImplementedUserDao"/>
+<attrib name="charEnd" value="885"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserDao [line: 34] - findBySSO(String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.ImplementedUserDao"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/ImplementedUserDao.java" type="1"/>
+<marker charStart="1200" lineNumber="46" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1200"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{ImplementedUserDao.java[ImplementedUserDao"/>
+<attrib name="charEnd" value="1278"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserDao [line: 46] - findAllUsers()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.ImplementedUserDao"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/ImplementedUserDao.java" type="1"/>
+<marker charStart="1765" lineNumber="60" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1765"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{ImplementedUserDao.java[ImplementedUserDao"/>
+<attrib name="charEnd" value="1781"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserDao [line: 60] - save(EntityUser)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.ImplementedUserDao"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/ImplementedUserDao.java" type="1"/>
+<marker charStart="1829" lineNumber="64" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1829"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{ImplementedUserDao.java[ImplementedUserDao"/>
+<attrib name="charEnd" value="1870"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserDao [line: 64] - deleteBySSO(String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.ImplementedUserDao"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/ImplementedUserProfileDao.java" type="1"/>
+<marker charStart="517" lineNumber="18" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="517"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{ImplementedUserProfileDao.java[ImplementedUserProfileDao"/>
+<attrib name="charEnd" value="539"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserProfileDao [line: 18] - findById(int)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.ImplementedUserProfileDao"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/ImplementedUserProfileDao.java" type="1"/>
+<marker charStart="600" lineNumber="22" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="600"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{ImplementedUserProfileDao.java[ImplementedUserProfileDao"/>
+<attrib name="charEnd" value="641"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserProfileDao [line: 22] - findByType(String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.ImplementedUserProfileDao"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/ImplementedUserProfileDao.java" type="1"/>
+<marker charStart="822" lineNumber="29" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="822"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{ImplementedUserProfileDao.java[ImplementedUserProfileDao"/>
+<attrib name="charEnd" value="863"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserProfileDao [line: 29] - findAll()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.ImplementedUserProfileDao"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserProfileService.java" type="1"/>
+<marker charStart="606" lineNumber="21" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="606"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserProfileService.java[ImplementedUserProfileService"/>
+<attrib name="charEnd" value="632"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserProfileService [line: 21] - findById(int)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserProfileService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserProfileService.java" type="1"/>
+<marker charStart="692" lineNumber="25" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="692"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserProfileService.java[ImplementedUserProfileService"/>
+<attrib name="charEnd" value="722"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserProfileService [line: 25] - findByType(String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserProfileService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserProfileService.java" type="1"/>
+<marker charStart="775" lineNumber="29" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="775"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserProfileService.java[ImplementedUserProfileService"/>
+<attrib name="charEnd" value="798"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserProfileService [line: 29] - findAll()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserProfileService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserService.java" type="1"/>
+<marker charStart="696" lineNumber="25" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="696"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserService.java[ImplementedUserService"/>
+<attrib name="charEnd" value="722"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserService [line: 25] - findById(int)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserService.java" type="1"/>
+<marker charStart="774" lineNumber="29" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="774"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserService.java[ImplementedUserService"/>
+<attrib name="charEnd" value="813"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserService [line: 29] - findBySSO(String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserService.java" type="1"/>
+<marker charStart="879" lineNumber="34" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="879"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserService.java[ImplementedUserService"/>
+<attrib name="charEnd" value="942"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserService [line: 34] - saveUser(EntityUser)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserService.java" type="1"/>
+<marker charStart="1262" lineNumber="44" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1262"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserService.java[ImplementedUserService"/>
+<attrib name="charEnd" value="1311"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserService [line: 44] - updateUser(EntityUser)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserService.java" type="1"/>
+<marker charStart="1743" lineNumber="59" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1743"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserService.java[ImplementedUserService"/>
+<attrib name="charEnd" value="1766"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserService [line: 59] - deleteUserBySSO(String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserService.java" type="1"/>
+<marker charStart="1817" lineNumber="63" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1817"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserService.java[ImplementedUserService"/>
+<attrib name="charEnd" value="1845"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserService [line: 63] - findAllUsers()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/service/ImplementedUserService.java" type="1"/>
+<marker charStart="1912" lineNumber="67" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1912"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.service{ImplementedUserService.java[ImplementedUserService"/>
+<attrib name="charEnd" value="1947"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:ImplementedUserService [line: 67] - isUserSSOUnique(Integer, String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.service.ImplementedUserService"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/converter/Implemented_Converter.java" type="1"/>
+<marker charStart="933" lineNumber="26" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="933"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.converter{Implemented_Converter.java[Implemented_Converter"/>
+<attrib name="charEnd" value="982"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:Implemented_Converter [line: 26] - convert(Object)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.converter.Implemented_Converter"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/extendAbstDaoWG_implPersistTokRepository.java" type="1"/>
+<marker charStart="1041" lineNumber="29" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1041"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{extendAbstDaoWG_implPersistTokRepository.java[extendAbstDaoWG_implPersistTokRepository"/>
+<attrib name="charEnd" value="1108"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendAbstDaoWG_implPersistTokRepository [line: 29] - createNewToken(PersistentRememberMeToken)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.extendAbstDaoWG_implPersistTokRepository"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/extendAbstDaoWG_implPersistTokRepository.java" type="1"/>
+<marker charStart="1561" lineNumber="41" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1561"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{extendAbstDaoWG_implPersistTokRepository.java[extendAbstDaoWG_implPersistTokRepository"/>
+<attrib name="charEnd" value="1625"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendAbstDaoWG_implPersistTokRepository [line: 41] - getTokenForSeries(String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.extendAbstDaoWG_implPersistTokRepository"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/extendAbstDaoWG_implPersistTokRepository.java" type="1"/>
+<marker charStart="2201" lineNumber="57" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2201"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{extendAbstDaoWG_implPersistTokRepository.java[extendAbstDaoWG_implPersistTokRepository"/>
+<attrib name="charEnd" value="2264"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendAbstDaoWG_implPersistTokRepository [line: 57] - removeUserTokens(String)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.extendAbstDaoWG_implPersistTokRepository"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/dao/extendAbstDaoWG_implPersistTokRepository.java" type="1"/>
+<marker charStart="2691" lineNumber="69" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2691"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.dao{extendAbstDaoWG_implPersistTokRepository.java[extendAbstDaoWG_implPersistTokRepository"/>
+<attrib name="charEnd" value="2751"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendAbstDaoWG_implPersistTokRepository [line: 69] - updateToken(String, String, Date)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.dao.extendAbstDaoWG_implPersistTokRepository"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/security/extend_AbstractSecurityWebApplicationInitializer.java" type="1"/>
+<marker charStart="420" lineNumber="10" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="420"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.security{extend_AbstractSecurityWebApplicationInitializer.java[extend_AbstractSecurityWebApplicationInitializer"/>
+<attrib name="charEnd" value="430"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extend_AbstractSecurityWebApplicationInitializer [line: 10] - extend_AbstractSecurityWebApplicationInitializer()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.security.extend_AbstractSecurityWebApplicationInitializer"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/security/extend_WebSecurityConfigurerAdapter.java" type="1"/>
+<marker charStart="1827" lineNumber="34" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1827"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.security{extend_WebSecurityConfigurerAdapter.java[extend_WebSecurityConfigurerAdapter"/>
+<attrib name="charEnd" value="1908"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extend_WebSecurityConfigurerAdapter [line: 34] - configureGlobalSecurity(AuthenticationManagerBuilder)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.security.extend_WebSecurityConfigurerAdapter"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/security/extend_WebSecurityConfigurerAdapter.java" type="1"/>
+<marker charStart="2116" lineNumber="41" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2116"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.security{extend_WebSecurityConfigurerAdapter.java[extend_WebSecurityConfigurerAdapter"/>
+<attrib name="charEnd" value="2172"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extend_WebSecurityConfigurerAdapter [line: 41] - configure(HttpSecurity)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.security.extend_WebSecurityConfigurerAdapter"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/security/extend_WebSecurityConfigurerAdapter.java" type="1"/>
+<marker charStart="2865" lineNumber="53" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2865"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.security{extend_WebSecurityConfigurerAdapter.java[extend_WebSecurityConfigurerAdapter"/>
+<attrib name="charEnd" value="2917"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extend_WebSecurityConfigurerAdapter [line: 53] - passwordEncoder()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.security.extend_WebSecurityConfigurerAdapter"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/security/extend_WebSecurityConfigurerAdapter.java" type="1"/>
+<marker charStart="3080" lineNumber="59" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="3080"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.security{extend_WebSecurityConfigurerAdapter.java[extend_WebSecurityConfigurerAdapter"/>
+<attrib name="charEnd" value="3168"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extend_WebSecurityConfigurerAdapter [line: 59] - authenticationProvider()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.security.extend_WebSecurityConfigurerAdapter"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/security/extend_WebSecurityConfigurerAdapter.java" type="1"/>
+<marker charStart="3565" lineNumber="68" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="3565"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.security{extend_WebSecurityConfigurerAdapter.java[extend_WebSecurityConfigurerAdapter"/>
+<attrib name="charEnd" value="3669"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extend_WebSecurityConfigurerAdapter [line: 68] - getPersistentTokenBasedRememberMeServices()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.security.extend_WebSecurityConfigurerAdapter"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/security/extend_WebSecurityConfigurerAdapter.java" type="1"/>
+<marker charStart="3960" lineNumber="76" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="3960"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.security{extend_WebSecurityConfigurerAdapter.java[extend_WebSecurityConfigurerAdapter"/>
+<attrib name="charEnd" value="4012"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extend_WebSecurityConfigurerAdapter [line: 76] - getAuthenticationTrustResolver()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.security.extend_WebSecurityConfigurerAdapter"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer.java" type="1"/>
+<marker charStart="482" lineNumber="10" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="482"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer.java[extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer"/>
+<attrib name="charEnd" value="555"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer [line: 10] - getRootConfigClasses()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer.java" type="1"/>
+<marker charStart="717" lineNumber="16" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="717"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer.java[extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer"/>
+<attrib name="charEnd" value="738"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer [line: 16] - getServletConfigClasses()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer.java" type="1"/>
+<marker charStart="852" lineNumber="22" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="852"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer.java[extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer"/>
+<attrib name="charEnd" value="894"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer [line: 22] - getServletMappings()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.extendsAbstractAnnotationConfigDispatcherServletInitializer_AppInitializer"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/extendsWebMvcConfigurerAdapter_AppConfig.java" type="1"/>
+<marker charStart="1572" lineNumber="37" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="1572"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{extendsWebMvcConfigurerAdapter_AppConfig.java[extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="charEnd" value="1656"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendsWebMvcConfigurerAdapter_AppConfig [line: 37] - configureViewResolvers(ViewResolverRegistry)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/extendsWebMvcConfigurerAdapter_AppConfig.java" type="1"/>
+<marker charStart="2082" lineNumber="50" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2082"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{extendsWebMvcConfigurerAdapter_AppConfig.java[extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="charEnd" value="2167"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendsWebMvcConfigurerAdapter_AppConfig [line: 50] - addResourceHandlers(ResourceHandlerRegistry)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/extendsWebMvcConfigurerAdapter_AppConfig.java" type="1"/>
+<marker charStart="2508" lineNumber="60" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2508"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{extendsWebMvcConfigurerAdapter_AppConfig.java[extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="charEnd" value="2580"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendsWebMvcConfigurerAdapter_AppConfig [line: 60] - addFormatters(FormatterRegistry)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/extendsWebMvcConfigurerAdapter_AppConfig.java" type="1"/>
+<marker charStart="2856" lineNumber="70" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="2856"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{extendsWebMvcConfigurerAdapter_AppConfig.java[extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="charEnd" value="2941"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendsWebMvcConfigurerAdapter_AppConfig [line: 70] - messageSource()"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/SpringMVCHibernateWithSpringSecurityExample/src/main/java/com/websystique/springmvc/configuration/extendsWebMvcConfigurerAdapter_AppConfig.java" type="1"/>
+<marker charStart="3489" lineNumber="82" type="org.eclipse.jdt.debug.javaLineBreakpointMarker">
+<attrib name="charStart" value="3489"/>
+<attrib name="org.eclipse.jdt.debug.core.suspendPolicy" value="2"/>
+<attrib name="org.eclipse.jdt.debug.ui.JAVA_ELEMENT_HANDLE_ID" value="=SpringMVCHibernateWithSpringSecurityExample/src\/main\/java&lt;com.websystique.springmvc.configuration{extendsWebMvcConfigurerAdapter_AppConfig.java[extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="charEnd" value="3550"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="message" value="Line breakpoint:extendsWebMvcConfigurerAdapter_AppConfig [line: 82] - configurePathMatch(PathMatchConfigurer)"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.jdt.debug"/>
+<attrib name="org.eclipse.jdt.debug.core.typeName" value="com.websystique.springmvc.configuration.extendsWebMvcConfigurerAdapter_AppConfig"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+</marker>
+</breakpoint>
+</breakpoints>
