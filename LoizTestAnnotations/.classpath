@@ -5,5 +5,7 @@
 	<classpathentry kind="lib" path="C:/Users/Loizani Slimani/LunaWorkspace/_loiz spring jars/spring-beans-5.1.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Loizani Slimani/LunaWorkspace/_loiz spring jars/spring-context-5.1.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Loizani Slimani/LunaWorkspace/_loiz spring jars/spring-core-5.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Loizani Slimani/LunaWorkspace/_loiz spring jars/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Loizani Slimani/LunaWorkspace/_loiz spring jars/spring-aop-5.1.0.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
