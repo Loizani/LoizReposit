@@ -1,6 +1,6 @@
 package org.loiz.AnnoTraining.Geometrie.configurations;
 
-import org.loiz.AnnoTraining.Geometrie.SurfaceCercle;
+import org.loiz.AnnoTraining.Geometrie.ObjetGeometrique;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class AppConfigDesSurfaces {
 
-	@Bean
-	public SurfaceCercle getCalculSurfaceCercle() {
+	@Bean(name="ObjetGeometrique")
+	public ObjetGeometrique getCalculSurfaceCercle() {
 		
-		return new SurfaceCercle();
+		return new ObjetGeometrique();
 	}
 	
 }
