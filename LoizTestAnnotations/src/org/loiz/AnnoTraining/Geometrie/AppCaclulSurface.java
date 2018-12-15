@@ -9,7 +9,7 @@ public class AppCaclulSurface {
 	public static void main(String[] argv) {		
 		
 		ApplicationContext objFactory = new AnnotationConfigApplicationContext(AppConfigDesSurfaces.class);
-		
+		 
 		//SurfaceCercle objSurCer = new SurfaceCercle(4);
 		SurfaceCercle objFactorySurCer = objFactory.getBean(SurfaceCercle.class) ; 
 		
