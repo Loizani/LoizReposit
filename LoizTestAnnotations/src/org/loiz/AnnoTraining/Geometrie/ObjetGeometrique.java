@@ -5,7 +5,7 @@ public class ObjetGeometrique {
 	private String chaine;
 
 	public ObjetGeometrique() {
-		super();
+		super(); 
 	}	
 	
 	public void setChaine(String chaine) {
