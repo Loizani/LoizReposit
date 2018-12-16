@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 public class ObjetGeometrique {	
 	
 	
-	private String privNomFigure;
-
 	@Autowired
 	private InterfaceFigureCirculaire privInterfaceObjFigCirc ;
+	
+	private String privNomFigure;
 	
 	public InterfaceFigureCirculaire getPrivInterfaceObjFigCirc() {
 		return privInterfaceObjFigCirc;
