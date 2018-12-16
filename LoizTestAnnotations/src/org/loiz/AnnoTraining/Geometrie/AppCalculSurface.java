@@ -17,8 +17,8 @@ public class AppCalculSurface {
 
 		// Création d'un objet "FigureCirculaire" dans l'objet Beané "ObjetGeometrique"
 
-		FigureCirculaire objFigCirc = new FigureCirculaire();
-		objFactorySurCer.setPrivObjFigCirc(objFigCirc);
+		InterfaceFigureCirculaire objFigCirc = new FigureCirculaire();
+		objFactorySurCer.setPrivInterfaceObjFigCirc(objFigCirc);
 		objFactorySurCer.setChaine(myString);
 
 		objFigCirc.setRayon(dRayon);

@@ -4,14 +4,15 @@ public class ObjetGeometrique {
 	 
 	private String privNomFigure;
 
-	private FigureCirculaire privObjFigCirc ;
+	private InterfaceFigureCirculaire privInterfaceObjFigCirc ;
 	
-	public FigureCirculaire getPrivObjFigCirc() {
-		return privObjFigCirc;
+	public InterfaceFigureCirculaire getPrivInterfaceObjFigCirc() {
+		return privInterfaceObjFigCirc;
 	}
 
-	public void setPrivObjFigCirc(FigureCirculaire privObjFigCirc) {
-		this.privObjFigCirc = privObjFigCirc;
+	public void setPrivInterfaceObjFigCirc(
+			InterfaceFigureCirculaire privInterfaceObjFigCirc) {
+		this.privInterfaceObjFigCirc = privInterfaceObjFigCirc;
 	}
 
 	public ObjetGeometrique() {
