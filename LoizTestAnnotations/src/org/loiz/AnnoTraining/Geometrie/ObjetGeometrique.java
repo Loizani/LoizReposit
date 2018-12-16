@@ -1,25 +1,28 @@
 package org.loiz.AnnoTraining.Geometrie;
 
 public class ObjetGeometrique {	
+	 
+	private String privNomFigure;
+
+	private FigureCirculaire privObjFigCirc ;
 	
-	private String chaine;
+	public FigureCirculaire getPrivObjFigCirc() {
+		return privObjFigCirc;
+	}
+
+	public void setPrivObjFigCirc(FigureCirculaire privObjFigCirc) {
+		this.privObjFigCirc = privObjFigCirc;
+	}
 
 	public ObjetGeometrique() {
 		super(); 
 	}	
-	
-	public void setChaine(String chaine) {
-		this.chaine = chaine;
+
+	public void setChaine(String NomFigure) {
+		this.privNomFigure = NomFigure;
 	}
 
-	public ObjetGeometrique(String chaine) {
-		this.chaine = chaine;
-	}
-
-	public void afficher() {
-		System.out.println("Ceci est un objet geometrique : " + chaine);
-	}
-	
-	
-
+	public String afficher() {
+		return privNomFigure ;
+	}	
 }
