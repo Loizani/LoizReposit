@@ -12,12 +12,13 @@ public class AppCalculSurface {
 		String messV = ""  ;
 		ApplicationContext objFactory = new AnnotationConfigApplicationContext(	AppConfigDesSurfaces.class);
 		// declarationde l'objet "Beané" ObjetGeometrique
-		ObjetGeometrique objFactorySurCer = (ObjetGeometrique) objFactory.getBean("ObjetGeometrique");
-		// Création d'un objet "FigureCirculaire" dans l'objet Beané "ObjetGeometrique"
-		//SANS @Autowire : le lien se fait avec l'instruction new
-		InterfaceFigureCirculaire objFigCirc = new FigureCirculaire();		
-		
-		objFactorySurCer.setPrivInterfaceObjFigCirc(objFigCirc);
+		ObjetGeometrique objFactorySurCer = (ObjetGeometrique) objFactory.getBean("ObjetGeometrique");		
+		// Création d'un objet "FigureCirculaire" par declaration entant que Bean 
+		// Avec @Autowire l'instruction suivante n'est pas nécessaire 
+		// Le lien avec la classe implémentante se fait par déclaration d'une Bean 
+		//Laligne suivante est masquée
+/*		InterfaceFigureCirculaire objFigCirc = new FigureCirculaire();			
+		objFactorySurCer.setPrivInterfaceObjFigCirc(objFigCirc); */
 		objFactorySurCer.setRayon(dRayon);
 		objFactorySurCer.setChaine("cercle");
 		

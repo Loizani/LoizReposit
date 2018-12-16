@@ -1,9 +1,13 @@
 package org.loiz.AnnoTraining.Geometrie;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class ObjetGeometrique {	
-	 
+	
+	
 	private String privNomFigure;
 
+	@Autowired
 	private InterfaceFigureCirculaire privInterfaceObjFigCirc ;
 	
 	public InterfaceFigureCirculaire getPrivInterfaceObjFigCirc() {
