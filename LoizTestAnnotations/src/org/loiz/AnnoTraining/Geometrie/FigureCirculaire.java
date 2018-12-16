@@ -1,5 +1,8 @@
 package org.loiz.AnnoTraining.Geometrie;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class FigureCirculaire  implements InterfaceFigureCirculaire
 			{ 
 

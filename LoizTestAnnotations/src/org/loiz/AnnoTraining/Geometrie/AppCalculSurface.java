@@ -1,6 +1,6 @@
 package org.loiz.AnnoTraining.Geometrie;
 
-import org.loiz.AnnoTraining.Geometrie.configurations.AppConfigDesSurfaces;
+import org.loiz.AnnoTraining.Geometrie.Configuration.AppConfigDesSurfaces;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -12,13 +12,7 @@ public class AppCalculSurface {
 		String messV = ""  ;
 		ApplicationContext objFactory = new AnnotationConfigApplicationContext(	AppConfigDesSurfaces.class);
 		// declarationde l'objet "Beané" ObjetGeometrique
-		ObjetGeometrique objFactorySurCer = (ObjetGeometrique) objFactory.getBean("ObjetGeometrique");		
-		// Création d'un objet "FigureCirculaire" par declaration entant que Bean 
-		// Avec @Autowire l'instruction suivante n'est pas nécessaire 
-		// Le lien avec la classe implémentante se fait par déclaration d'une Bean 
-		//Laligne suivante est masquée
-/*		InterfaceFigureCirculaire objFigCirc = new FigureCirculaire();			
-		objFactorySurCer.setPrivInterfaceObjFigCirc(objFigCirc); */
+		ObjetGeometrique objFactorySurCer = (ObjetGeometrique) objFactory.getBean(ObjetGeometrique.class);	
 		objFactorySurCer.setRayon(dRayon);
 		objFactorySurCer.setChaine("cercle");
 		
