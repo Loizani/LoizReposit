@@ -13,7 +13,7 @@ public class ObjetGeometrique {
 	public void setPrivInterfaceObjFigCirc(
 			InterfaceFigureCirculaire privInterfaceObjFigCirc) {
 		this.privInterfaceObjFigCirc = privInterfaceObjFigCirc;
-	}
+	} 
 
 	public ObjetGeometrique() {
 		super(); 
@@ -24,6 +24,37 @@ public class ObjetGeometrique {
 	}
 
 	public String afficher() {
-		return privNomFigure ;
+		//Sans @Autowire
+		return privNomFigure + " de rayon " + privInterfaceObjFigCirc.getRayon() ;		
 	}	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

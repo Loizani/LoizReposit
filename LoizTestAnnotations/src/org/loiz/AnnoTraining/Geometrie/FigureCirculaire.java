@@ -8,8 +8,12 @@ public class FigureCirculaire  implements InterfaceFigureCirculaire
 	
 	public FigureCirculaire() {
 		super();
-	}	
+	}		
 	
+	public double getRayon() {
+		return rayon;
+	}
+
 	public void setRayon(double rayon) {
 		this.rayon = rayon;
 	}
@@ -26,5 +30,7 @@ public class FigureCirculaire  implements InterfaceFigureCirculaire
 		this.surface  = Math.PI * rayon ;
 		return surface;
 	}	
+	
+	
 	
 }

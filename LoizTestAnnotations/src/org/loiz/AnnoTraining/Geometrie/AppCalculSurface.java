@@ -7,27 +7,22 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AppCalculSurface {
 
 	public static void main(String[] argv) {
-		double dRayon = 4;
-		String myString = "Cercle de " + dRayon + " cm de rayon";
+		double dRayon = 4;		
 		String msgS = "";
-		String msgV = "";
 		ApplicationContext objFactory = new AnnotationConfigApplicationContext(	AppConfigDesSurfaces.class);
 		// declarationde l'objet "Beané" ObjetGeometrique
 		ObjetGeometrique objFactorySurCer = (ObjetGeometrique) objFactory.getBean("ObjetGeometrique");
-
+		
+		//SANS @Autowire !!
 		// Création d'un objet "FigureCirculaire" dans l'objet Beané "ObjetGeometrique"
-
 		InterfaceFigureCirculaire objFigCirc = new FigureCirculaire();
 		objFactorySurCer.setPrivInterfaceObjFigCirc(objFigCirc);
-		objFactorySurCer.setChaine(myString);
-
 		objFigCirc.setRayon(dRayon);
-
-		msgS = objFactorySurCer.afficher() + "et de surface  : "	+ objFigCirc.calculSurface() + "  cm2";
-		msgV = "Sphere correpsondante de volume : "	+ objFigCirc.calculVolumeSphere() + " cm3\n\n";
+		objFactorySurCer.setChaine("cercle");
+		
+		msgS = objFactorySurCer.afficher() ;
 		System.out.println(msgS);
-		System.out.println(msgV);
-
+		
 		((AnnotationConfigApplicationContext) objFactory).close();
 	}
 
