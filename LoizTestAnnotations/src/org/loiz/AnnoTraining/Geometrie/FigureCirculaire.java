@@ -1,6 +1,6 @@
 package org.loiz.AnnoTraining.Geometrie;
 
-public class FigureCirculaire 
+public class FigureCirculaire  implements InterfaceFigureCirculaire
 			{
 
     private double rayon ;
