@@ -8,20 +8,24 @@ public class AppCalculSurface {
 
 	public static void main(String[] argv) {
 		double dRayon = 4;		
-		String msgS = "";
+		String msgS = "" ;
+		String messV = ""  ;
 		ApplicationContext objFactory = new AnnotationConfigApplicationContext(	AppConfigDesSurfaces.class);
 		// declarationde l'objet "Beané" ObjetGeometrique
 		ObjetGeometrique objFactorySurCer = (ObjetGeometrique) objFactory.getBean("ObjetGeometrique");
-		
-		//SANS @Autowire !!
 		// Création d'un objet "FigureCirculaire" dans l'objet Beané "ObjetGeometrique"
-		InterfaceFigureCirculaire objFigCirc = new FigureCirculaire();
+		//SANS @Autowire : le lien se fait avec l'instruction new
+		InterfaceFigureCirculaire objFigCirc = new FigureCirculaire();		
+		
 		objFactorySurCer.setPrivInterfaceObjFigCirc(objFigCirc);
-		objFigCirc.setRayon(dRayon);
+		objFactorySurCer.setRayon(dRayon);
 		objFactorySurCer.setChaine("cercle");
 		
-		msgS = objFactorySurCer.afficher() ;
+		msgS = objFactorySurCer.afficherSurface() ;
 		System.out.println(msgS);
+		
+		messV = objFactorySurCer.afficherVolume();
+		System.out.println(messV);
 		
 		((AnnotationConfigApplicationContext) objFactory).close();
 	}

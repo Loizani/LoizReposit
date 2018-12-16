@@ -17,20 +17,17 @@ public class FigureCirculaire  implements InterfaceFigureCirculaire
 	public void setRayon(double rayon) {
 		this.rayon = rayon;
 	}
-
-	public double  calculVolumeSphere() {			
-		return (4*(Math.PI)*(rayon*rayon*rayon))/3;
-	}	
 	
 	public double  calculDiametre() {			
 		return 2*rayon;
 	}	
 	
+	public double  calculVolumeSphere() {			
+		return (4*(Math.PI)*(rayon*rayon*rayon))/3;
+	}	
 	public double  calculSurface() {		
 		this.surface  = Math.PI * rayon ;
 		return surface;
-	}	
-	
-	
+	}		
 	
 }

@@ -19,13 +19,22 @@ public class ObjetGeometrique {
 		super(); 
 	}	
 
+	public void setRayon(double rayon) {
+		privInterfaceObjFigCirc.setRayon(rayon); 
+	}
+	
 	public void setChaine(String NomFigure) {
 		this.privNomFigure = NomFigure;
 	}
 
-	public String afficher() {
+	public String afficherSurface() {
 		//Sans @Autowire
-		return privNomFigure + " de rayon " + privInterfaceObjFigCirc.getRayon() ;		
+		return privNomFigure + " de surface " + privInterfaceObjFigCirc.calculSurface() ;		
+	}
+	
+	public String afficherVolume() {
+		//Sans @Autowire
+		return privNomFigure + " de sphere de volume " + privInterfaceObjFigCirc.calculVolumeSphere() ;		
 	}	
 }
 
