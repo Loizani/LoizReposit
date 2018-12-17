@@ -33,7 +33,7 @@ public class AppAchatPortable {
 			OperateurTelecom objOperateurTelecom  = eleEnt.getPrivObjFournisseurTelecom();
 			List<VersionDeProtable> objListVersionDeProtable = eleEnt.getPrivListProtable();
 			String strNomFour = objOperateurTelecom.getPrivsFT_NomFournisseur();
-
+ 
 			Gson gson = new Gson();
 //			Type listType = new TypeToken<List<String>>() {}.getType();
 //			 String json = gson.toJson(eleEnt, listType);
