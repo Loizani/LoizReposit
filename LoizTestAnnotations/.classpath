@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="C:/Users/Loizani Slimani/LunaWorkspace/_loiz spring jars/commons-logging-api-1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Loizani Slimani/LunaWorkspace/_loiz spring jars/spring-aop-5.1.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Loizani Slimani/LunaWorkspace/_loiz spring jars/spring-expression-5.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Apache Software Foundation/apache-maven-3.5.3/repository/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
