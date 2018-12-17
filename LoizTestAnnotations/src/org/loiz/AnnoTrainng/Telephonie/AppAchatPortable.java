@@ -12,6 +12,11 @@ import org.loiz.AnnoTrainng.Telephonie.model.VersionDeProtable;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import java.lang.reflect.Type;
+
+
 public class AppAchatPortable {
 	
 	public  static void main(String[] Argv) {
@@ -27,11 +32,18 @@ public class AppAchatPortable {
 		for(Entreprise eleEnt : objListIMM){
 			OperateurTelecom objOperateurTelecom  = eleEnt.getPrivObjFournisseurTelecom();
 			List<VersionDeProtable> objListVersionDeProtable = eleEnt.getPrivListProtable();
-			String strNomFour = objOperateurTelecom.getPrivsFT_NomFournisseur();	
-			
-			if (strNomFour.toString() == "SFR") {				
+			String strNomFour = objOperateurTelecom.getPrivsFT_NomFournisseur();
+
+			Gson gson = new Gson();
+//			Type listType = new TypeToken<List<String>>() {}.getType();
+//			 String json = gson.toJson(eleEnt, listType);
+			 
+	        System.out.println( "json " + strNomFour + " : " + gson.toJson((java.util.Collection)objListIMM) +"\n" );
+					
+			if (strNomFour.toString() == "Free") {	
+
 				for(VersionDeProtable eleVP : objListVersionDeProtable)
-				System.out.println(enumSocietes.SFR.name() + " : " + eleVP.getPrivsVP_MarquePortable());
+				System.out.println(enumSocietes.Free.name() + " : " + eleVP.getPrivsVP_MarquePortable());
 			}
 		}
 		
