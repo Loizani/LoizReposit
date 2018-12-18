@@ -13,12 +13,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import java.lang.reflect.Type;
 
 
 public class AppAchatPortable {
 	
+	@SuppressWarnings("rawtypes")
 	public  static void main(String[] Argv) {
 
 		ApplicationContext objFactory = new AnnotationConfigApplicationContext(AppConfigTelephonie.class);				

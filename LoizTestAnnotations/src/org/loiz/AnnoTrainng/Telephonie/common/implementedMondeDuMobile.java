@@ -5,8 +5,9 @@ import java.util.List;
 
 import org.loiz.AnnoTrainng.Telephonie.model.OperateurTelecom;
 import org.loiz.AnnoTrainng.Telephonie.model.VersionDeProtable;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public  class implementedMondeDuMobile implements InterfaceMondeDuMobile 
 {
 
