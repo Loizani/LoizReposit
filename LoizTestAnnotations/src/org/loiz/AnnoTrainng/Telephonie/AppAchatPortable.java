@@ -3,6 +3,7 @@ package org.loiz.AnnoTrainng.Telephonie;
 import java.util.List;
 
 import org.loiz.AnnoTrainng.Telephonie.common.Entreprise;
+import org.loiz.AnnoTrainng.Telephonie.common.InterfaceMondeDuMobile;
 import org.loiz.AnnoTrainng.Telephonie.common.ServiceMondeDuMobile;
 import org.loiz.AnnoTrainng.Telephonie.common.enumSocietes;
 import org.loiz.AnnoTrainng.Telephonie.common.implementedMondeDuMobile;
@@ -25,8 +26,15 @@ public class AppAchatPortable {
 				
 		objServiceMondeDuMobile.constituerEtlisterEntreprises();
 		
-		implementedMondeDuMobile objIMM =  (implementedMondeDuMobile) objServiceMondeDuMobile.getiSMM();
-		List<Entreprise>  objListIMM = objIMM.getPrivobjListEntreprise() ;
+		//implementedMondeDuMobile objIMM =  (implementedMondeDuMobile) objServiceMondeDuMobile.getiSMM();
+		InterfaceMondeDuMobile  objIMM =  objServiceMondeDuMobile.getiSMM();
+		objIMM.constituerListeEntreprise();
+		//Pour démontrer l'utilisation de @Qualifier
+		//on ne va pas citer explicitement directement la classe implémentante
+		//Pour montrer l'aspect "dynamique" de l'utilisation de @Qualifier
+		
+		
+		/*List<Entreprise>  objListIMM = objIMM.getPrivobjListEntreprise() ;
 		
 		for(Entreprise eleEnt : objListIMM){
 			OperateurTelecom objOperateurTelecom  = eleEnt.getPrivObjFournisseurTelecom();
@@ -44,7 +52,7 @@ public class AppAchatPortable {
 				for(VersionDeProtable eleVP : objListVersionDeProtable)
 				System.out.println(enumSocietes.Free.name() + " : " + eleVP.getPrivsVP_MarquePortable());
 			}
-		}
+		}*/
 		
 		((AnnotationConfigApplicationContext) objFactory).close();		
 	}
