@@ -34,7 +34,7 @@ public class AppAchatPortable {
 		//Pour montrer l'aspect "dynamique" de l'utilisation de @Qualifier
 		
 		
-		/*List<Entreprise>  objListIMM = objIMM.getPrivobjListEntreprise() ;
+		List<Entreprise>  objListIMM = objIMM.listEntreprises() ;
 		
 		for(Entreprise eleEnt : objListIMM){
 			OperateurTelecom objOperateurTelecom  = eleEnt.getPrivObjFournisseurTelecom();
@@ -42,8 +42,7 @@ public class AppAchatPortable {
 			String strNomFour = objOperateurTelecom.getPrivsFT_NomFournisseur();
  
 			Gson gson = new Gson();
-//			Type listType = new TypeToken<List<String>>() {}.getType();
-//			 String json = gson.toJson(eleEnt, listType);
+
 			 
 	        System.out.println( "json " + strNomFour + " : " + gson.toJson((java.util.Collection)objListIMM) +"\n" );
 					
@@ -52,7 +51,7 @@ public class AppAchatPortable {
 				for(VersionDeProtable eleVP : objListVersionDeProtable)
 				System.out.println(enumSocietes.Free.name() + " : " + eleVP.getPrivsVP_MarquePortable());
 			}
-		}*/
+		}
 		
 		((AnnotationConfigApplicationContext) objFactory).close();		
 	}

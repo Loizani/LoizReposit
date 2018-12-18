@@ -16,7 +16,7 @@ public  class implementedSecondMondeDuMobile implements InterfaceMondeDuMobile
 	
 	private List<Entreprise> privobjListEntreprise ;
 	
-	public List<Entreprise> getPrivobjListEntreprise() {
+	public List<Entreprise> listEntreprises() {
 		return privobjListEntreprise;
 	}
 
