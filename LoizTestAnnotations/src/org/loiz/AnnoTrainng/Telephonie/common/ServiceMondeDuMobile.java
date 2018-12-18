@@ -1,6 +1,7 @@
 package org.loiz.AnnoTrainng.Telephonie.common;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 //import java.util.ArrayList;
 //import java.util.List;
@@ -8,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 //import org.loiz.AnnoTrainng.Telephonie.model.OperateurTelecom;
 //import org.loiz.AnnoTrainng.Telephonie.model.VersionDeProtable;
 
-
+@Component
 public  class ServiceMondeDuMobile 
 {
 
