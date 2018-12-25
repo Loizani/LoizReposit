@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public  class ServiceMondeDuMobile 
-{
+{ 
 
 	@Autowired
-	@Qualifier("implementedSecondMondeDuMobile")
+	@Qualifier("ImplementedSecondMondeDuMobile")
 	InterfaceMondeDuMobile iSMM ;	
 		
 	public InterfaceMondeDuMobile getiSMM() {
