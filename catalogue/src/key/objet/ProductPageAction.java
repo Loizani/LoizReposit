@@ -15,7 +15,7 @@ public class ProductPageAction extends ActionSupport {
 	
 	@Override
     public String execute() throws Exception {
-		fillData objBuild = new fillData();
+		InterfacefillData objBuild = new fillData();
 		ListeMagasins = objBuild.getListeMagasins();
 		ListeProduits = objBuild.getListeProduits();
 		CatalogMap = objBuild.getCatalogMap();

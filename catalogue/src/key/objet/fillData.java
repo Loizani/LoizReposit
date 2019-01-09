@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class fillData {
+public class fillData implements InterfacefillData {
 
 	private  List<magasin> ListeMagasins ;
 	private  List<produit> ListeProduits ;	
@@ -74,9 +74,7 @@ public class fillData {
 
 	public  void setCatalogMap(Map<magasin, produit> catalogMap) {
 		CatalogMap = catalogMap;
-	}	
-	
-	
+	}
 	
 	
 }
