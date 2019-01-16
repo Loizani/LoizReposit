@@ -17,11 +17,11 @@ public class ProductPageAction extends ActionSupport {
 
 	private static final long serialVersionUID = 1L;
 
-	private List<magasin> ListeMagasins;
+	public List<magasin> ListeMagasins;
 
-	private List<produit> ListeProduits;
+	public List<produit> ListeProduits;
 	
-	private Map<magasin, produit> CatalogMap;
+//	private Map<magasin, produit> CatalogMap;
 
 	private InterfaceService attrService;
 
@@ -30,31 +30,9 @@ public class ProductPageAction extends ActionSupport {
 		attrService = new ServiceImpl() ;
 		ListeMagasins = attrService.getListeMagasins();
 		ListeProduits = attrService.getListeProduits();
-		CatalogMap = attrService.getCatalogMap();
+//		CatalogMap = attrService.getCatalogMap();
 		 
 		return SUCCESS;
-	}
-	
-	public InterfaceService getAttrService() {
-		return attrService;
-	}
-	public void setAttrService(InterfaceService attrService) {
-		this.attrService = attrService;
-	}
-	
-	public List<magasin> getListeMagasins() {
-		return ListeMagasins;
-	}
+	}	
 
-	public void setListeMagasins(List<magasin> listeMagasins) {
-		ListeMagasins = listeMagasins;
-	}
-
-	public List<produit> getListeProduits() {
-		return ListeProduits;
-	}
-
-	public void setListeProduits(List<produit> listeProduits) {
-		ListeProduits = listeProduits;
-	}
 }
