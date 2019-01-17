@@ -17,9 +17,9 @@ public class ProductPageAction extends ActionSupport {
 
 	private static final long serialVersionUID = 1L;
 
-	public List<magasin> ListeMagasins;
+	private List<magasin> ListeMagasins;
 
-	public List<produit> ListeProduits;
+	private List<produit> ListeProduits;
 	
 //	private Map<magasin, produit> CatalogMap;
 
@@ -34,5 +34,13 @@ public class ProductPageAction extends ActionSupport {
 		 
 		return SUCCESS;
 	}	
+	
+	public List<magasin> getListeMagasins() {
+		return ListeMagasins;
+	}
+
+	public List<produit> getListeProduits() {
+		return ListeProduits;
+	}
 
 }
