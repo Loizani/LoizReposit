@@ -4,7 +4,7 @@ import javax.servlet.ServletException;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-
+ 
 public class SprinAppInitializer implements WebApplicationInitializer {
 
     @Override

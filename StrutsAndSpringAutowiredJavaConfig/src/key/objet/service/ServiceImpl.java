@@ -15,7 +15,7 @@ import key.objet.entities.produit;
 @Component
 public class ServiceImpl implements InterfaceService {
 
-	
+	 
 	private InterfacefillDataDao IDAO ;
 		
 	

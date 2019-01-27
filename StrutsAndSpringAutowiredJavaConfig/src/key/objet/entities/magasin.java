@@ -1,5 +1,5 @@
 package key.objet.entities;
-
+ 
 public class magasin {
 
 	private String strNomMag ;

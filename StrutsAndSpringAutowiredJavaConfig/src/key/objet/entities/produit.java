@@ -1,5 +1,5 @@
 package key.objet.entities;
-
+ 
 public class produit {
 
 	private String strReference ;
